@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow:
+
+Sitemap: https://hiddely.github.io/sitemap.xml
