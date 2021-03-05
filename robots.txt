@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://hiddely.github.io/sitemap.xml
+Sitemap: https://pps-lab.github.io/sitemap.xml
