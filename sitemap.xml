@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://pps-lab.github.io/publications/anwar_specific/tiim/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/anwar_specific/talos/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/anwar_specific/crosszig/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/hidde_specific/decreg/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/anwar_specific/pilatus/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/lukas_specific/blockchain/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/alex_specific/marble/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/lukas_specific/fl/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
         <loc>https://pps-lab.github.io/people/anwarhithnawi/</loc>
         <lastmod>2021-5-4</lastmod>
     </url>
@@ -45,10 +13,6 @@
         <lastmod>2021-5-4</lastmod>
     </url>
     <url>
-        <loc>https://pps-lab.github.io/publications/timecrypt/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
         <loc>https://pps-lab.github.io/people/lukasburkhalter/</loc>
         <lastmod>2021-5-4</lastmod>
     </url>
@@ -58,38 +22,6 @@
     </url>
     <url>
         <loc>https://pps-lab.github.io/people/hiddelycklama/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/HelloWorld/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/timecrypt/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/droplet/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/msr/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/droplet/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/nicolas/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/ethgrant/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/fhe/</loc>
         <lastmod>2021-5-4</lastmod>
     </url>
     <url>
@@ -117,23 +49,7 @@
         <lastmod>2021-5-4</lastmod>
     </url>
     <url>
-        <loc>https://pps-lab.github.io/publications/fhe/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
         <loc>https://pps-lab.github.io/research/e2e-privacy/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/hidde/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/news/zeph/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/publications/zeph/</loc>
         <lastmod>2021-5-4</lastmod>
     </url>
     <url>
@@ -162,14 +78,6 @@
     </url>
     <url>
         <loc>https://pps-lab.github.io/people/alumni/ullaaeschbacher/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/people/emanuelopel/</loc>
-        <lastmod>2021-5-4</lastmod>
-    </url>
-    <url>
-        <loc>https://pps-lab.github.io/people/fabiobertschi/</loc>
         <lastmod>2021-5-4</lastmod>
     </url>
     <url>
