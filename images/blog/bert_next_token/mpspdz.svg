@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+    <defs>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L12,6 L0,12 Z" fill="#222"/>
+        </marker>
+        <style>
+            .box { fill: #ffffff; stroke: #222; stroke-width: 2; rx: 14; ry: 14; }
+            .codebg { fill: #f6f8fa; stroke: #e1e4e8; stroke-width: 1; rx: 8; ry: 8; }
+            .title { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size: 18px; font-weight: 700; fill: #111; }
+            .code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 14px; fill: #111; }
+            .arrow { stroke: #222; stroke-width: 1; fill: none; marker-end: url(#arrow); }
+            .subtitle { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size: 13px; fill: #444; }
+        </style>
+    </defs>
+
+    <!-- Box 1: Python code -->
+    <rect class="box" x="30" y="40" width="340" height="240"/>
+    <text class="title" x="50" y="75">Python code</text>
+    <text class="subtitle" x="50" y="97">(MP-SPDZ secure types)</text>
+
+    <!-- Code background -->
+    <rect class="codebg" x="45" y="110" width="310" height="90"/>
+
+    <text class="code" x="60" y="135">a = sint(1)</text>
+    <text class="code" x="60" y="157">b = sint(2)</text>
+    <text class="code" x="60" y="179">c = a + b</text>
+
+    <!-- Arrow 1 -->
+    <line class="arrow" x1="370" y1="160" x2="450" y2="160"/>
+
+    <!-- Box 2: Bytecode -->
+    <rect class="box" x="450" y="40" width="420" height="240"/>
+    <text class="title" x="470" y="75">Bytecode</text>
+
+    <!-- Code background -->
+    <rect class="codebg" x="465" y="95" width="390" height="150"/>
+
+    <text class="code" x="480" y="115"># journey-0--0</text>
+    <text class="code" x="480" y="137">ldsi s1, 1 # 0</text>
+    <text class="code" x="480" y="159">ldsi s2, 2 # 1</text>
+    <text class="code" x="480" y="181">adds s0, s1, s2 # 2</text>
+    <text class="code" x="480" y="205"># journey-0-memory-usage-2</text>
+    <text class="code" x="480" y="227">...</text>
+
+    <!-- Arrow 2 -->
+    <line class="arrow" x1="870" y1="160" x2="950" y2="160"/>
+
+    <!-- Box 3: MPC VM execution -->
+    <rect class="box" x="950" y="40" width="220" height="240"/>
+    <text class="title" x="970" y="75">MPC VM execution</text>
+    <text class="subtitle" x="970" y="97">(selected protocol)</text>
+
+    <!-- Small labels under arrows -->
+    <text class="subtitle" x="386" y="145">compile</text>
+    <text class="subtitle" x="888" y="145">execute</text>
+</svg>
