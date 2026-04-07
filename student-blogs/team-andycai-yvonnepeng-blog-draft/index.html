@@ -6,124 +6,141 @@
 At each step t:
   For each data point i = 1, ..., n:
     Include i in S_t with probability q, independently
-</code></pre><blockquote><p>💡 <strong>live Demo - Poisson</strong></p></blockquote><style>#smp-root * { box-sizing: border-box !important; margin: 0 !important; padding: 0 !important; }
-#smp-root { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; background: #f8f7f4 !important; color: #2c2c2a !important; padding: 18px 20px !important; max-width: 100% !important; }
-#smp-root h1 { font-size: 15px !important; font-weight: 600 !important; margin-bottom: 2px !important; }
-#smp-root .smp-badge { display: inline-block !important; font-size: 10px !important; padding: 1px 7px !important; border-radius: 99px !important; margin-left: 6px !important; vertical-align: middle !important; font-weight: 500 !important; background:#E6F1FB !important; color:#185FA5 !important; }
-#smp-root .smp-sub { font-size: 11px !important; color: #888780 !important; margin: 4px 0 14px !important; line-height: 1.5 !important; display: block !important; }
-#smp-root .bins { display: flex !important; flex-direction: row !important; gap: 6px !important; width: 100% !important; }
-#smp-root .bin { flex: 1 !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; background: #fff !important; padding: 6px 4px !important; min-height: 108px !important; display: flex !important; flex-direction: column !important; }
-#smp-root .bin-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-align: center !important; margin-bottom: 4px !important; font-weight: 600 !important; letter-spacing: .06em !important; text-transform: uppercase !important; display: block !important; }
-#smp-root .bin-balls { flex: 1 !important; display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; gap: 3px !important; justify-content: center !important; align-content: flex-start !important; min-height: 70px !important; }
-#smp-root .ball { width: 22px !important; height: 22px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 9px !important; font-weight: 700 !important; opacity: 0 !important; transform: scale(0) translateY(-8px) !important; transition: opacity .25s ease, transform .32s cubic-bezier(.34,1.56,.64,1) !important; flex-shrink: 0 !important; }
-#smp-root .ball.show { opacity: 1 !important; transform: scale(1) translateY(0) !important; }
-#smp-root .ctrl { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 8px !important; margin-top: 12px !important; flex-wrap: wrap !important; }
-#smp-root .btn { font-size: 12px !important; padding: 5px 13px !important; border-radius: 7px !important; border: 0.5px solid #d3d1c7 !important; background: #fff !important; color: #2c2c2a !important; cursor: pointer !important; font-family: inherit !important; transition: background .1s !important; }
-#smp-root .btn:hover { background: #f1efe8 !important; }
-#smp-root .btn:disabled { opacity: .35 !important; cursor: default !important; }
-#smp-root .smp-inf { font-size: 11px !important; color: #888780 !important; flex: 1 !important; min-width: 140px !important; }
-#smp-root .pbar { height: 3px !important; background: #e8e6df !important; border-radius: 2px !important; margin-top: 7px !important; }
-#smp-root .pfil { height: 3px !important; background: #185FA5 !important; border-radius: 2px !important; width: 0% !important; transition: width .3s !important; }
-#smp-root .stat-row { display: flex !important; gap: 10px !important; margin-top: 10px !important; }
-#smp-root .stat { background: #fff !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; padding: 6px 10px !important; flex: 1 !important; text-align: center !important; }
-#smp-root .stat-val { font-size: 17px !important; font-weight: 600 !important; color: #185FA5 !important; display: block !important; }
-#smp-root .stat-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-transform: uppercase !important; letter-spacing: .05em !important; display: block !important; }</style><div id="smp-root"><h1>Poisson Subsampling <span class="smp-badge">q = 0.2</span></h1><span class="smp-sub">Each of the 10 balls enters each of the 5 batches independently with probability q = 0.2. A ball may appear in <strong>multiple batches — or none</strong>.</span><div class="bins" id="bp"></div><div class="stat-row"><div class="stat"><span class="stat-val" id="s-total">—</span><span class="stat-lbl">Total placements</span></div><div class="stat"><span class="stat-val" id="s-canary">—</span><span class="stat-lbl">Canary batches</span></div><div class="stat"><span class="stat-val" id="s-empty">—</span><span class="stat-lbl">Empty batches</span></div></div><div class="ctrl"><button class="btn" id="bR" onclick="smpReset()">↺ Reset</button> <button class="btn" id="bS" onclick="smpStep()">Step →</button> <button class="btn" id="bA" onclick="smpAll()">Run All</button> <span class="smp-inf" id="inf">Ready — click Step to place one ball at a time.</span></div><div class="pbar"><div class="pfil" id="pf"></div></div></div><script>(function(){
-const N=10,T=5,Q=0.2;
-const COLORS=[
-  {bg:'#B5D4F4',fg:'#0C447C'},{bg:'#9FE1CB',fg:'#085041'},
-  {bg:'#FAC775',fg:'#633806'},{bg:'#F5C4B3',fg:'#711B0C'},
-  {bg:'#CECBF6',fg:'#26215C'},{bg:'#F4C0D1',fg:'#4B1528'},
-  {bg:'#C0DD97',fg:'#173404'},{bg:'#D3D1C7',fg:'#2C2C2A'},
-  {bg:'#F7C1C1',fg:'#501313'},{bg:'#FAD857',fg:'#5C4200'},
-];
-const LABELS=['1','2','3','4','5','6','7','8','9','★'];
-let asgn=[],step=0,busy=false,placed=[];
+</code></pre><blockquote><p>💡 <strong>Live Demo - Poisson</strong></p></blockquote><style>#smp-root { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f7f4; color: #2c2c2a; padding: 18px 20px; max-width: 100%; box-sizing: border-box; }
+#smp-root h1 { font-size: 15px; font-weight: 600; margin: 0 0 2px 0; }
+#smp-root .smp-badge { display: inline-block; font-size: 10px; padding: 1px 7px; border-radius: 99px; margin-left: 6px; vertical-align: middle; font-weight: 500; background:#E6F1FB; color:#185FA5; }
+#smp-root .smp-sub { font-size: 11px; color: #888780; margin: 4px 0 14px; line-height: 1.5; display: block; }
+#smp-root .bins { display: flex; flex-direction: row; gap: 6px; width: 100%; }
+#smp-root .bin { flex: 1; border: 0.5px solid #d3d1c7; border-radius: 8px; background: #fff; padding: 6px 4px; min-height: 108px; display: flex; flex-direction: column; }
+#smp-root .bin-lbl { font-size: 9px; color: #b4b2a9; text-align: center; margin-bottom: 4px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; display: block; }
+#smp-root .bin-balls { flex: 1; display: flex; flex-direction: row; flex-wrap: wrap; gap: 3px; justify-content: center; align-content: flex-start; min-height: 70px; }
+#smp-root .ball { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 700; flex-shrink: 0; }
+#smp-root .ctrl { display: flex; flex-direction: row; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+#smp-root .btn { font-size: 12px; padding: 5px 13px; border-radius: 7px; border: 0.5px solid #d3d1c7; background: #fff; color: #2c2c2a; cursor: pointer; font-family: inherit; transition: background .1s; }
+#smp-root .btn:hover { background: #f1efe8; }
+#smp-root .btn:disabled { opacity: .35; cursor: default; }
+#smp-root .smp-inf { font-size: 11px; color: #888780; flex: 1; min-width: 140px; }
+#smp-root .pbar { height: 3px; background: #e8e6df; border-radius: 2px; margin-top: 7px; }
+#smp-root .pfil { height: 3px; background: #185FA5; border-radius: 2px; width: 0%; transition: width .3s; }
+#smp-root .stat-row { display: flex; gap: 10px; margin-top: 10px; }
+#smp-root .stat { background: #fff; border: 0.5px solid #d3d1c7; border-radius: 8px; padding: 6px 10px; flex: 1; text-align: center; }
+#smp-root .stat-val { font-size: 17px; font-weight: 600; color: #185FA5; display: block; }
+#smp-root .stat-lbl { font-size: 9px; color: #b4b2a9; text-transform: uppercase; letter-spacing: .05em; display: block; }</style><div id="smp-root"><h1>Poisson Subsampling <span class="smp-badge">q = 0.2</span></h1><span class="smp-sub">Each of the 10 balls enters each of the 5 batches independently with probability q = 0.2. A ball may appear in <strong>multiple batches — or none</strong>.</span><div class="bins" id="smp-bp"></div><div class="stat-row"><div class="stat"><span class="stat-val" id="smp-total">—</span><span class="stat-lbl">Total placements</span></div><div class="stat"><span class="stat-val" id="smp-canary">—</span><span class="stat-lbl">Canary batches</span></div><div class="stat"><span class="stat-val" id="smp-empty">—</span><span class="stat-lbl">Empty batches</span></div></div><div class="ctrl"><button class="btn" id="smp-bR" onclick="smpReset()">↺ Reset</button> <button class="btn" id="smp-bS" onclick="smpStep()">Step →</button> <button class="btn" id="smp-bA" onclick="smpAll()">Run All</button> <span class="smp-inf" id="smp-inf">Ready — click Step to place one ball at a time.</span></div><div class="pbar"><div class="pfil" id="smp-pf"></div></div></div><script>(function(){
+  const N=10, T=5, Q=0.2;
+  const COLORS=[
+    {bg:'#B5D4F4',fg:'#0C447C'},{bg:'#9FE1CB',fg:'#085041'},
+    {bg:'#FAC775',fg:'#633806'},{bg:'#F5C4B3',fg:'#711B0C'},
+    {bg:'#CECBF6',fg:'#26215C'},{bg:'#F4C0D1',fg:'#4B1528'},
+    {bg:'#C0DD97',fg:'#173404'},{bg:'#D3D1C7',fg:'#2C2C2A'},
+    {bg:'#F7C1C1',fg:'#501313'},{bg:'#FAD857',fg:'#5C4200'},
+  ];
+  const LABELS=['1','2','3','4','5','6','7','8','9','★'];
+  let asgn=[], step=0, busy=false, placed=[];
 
-function generate(){
-  asgn=Array.from({length:N},()=>{
-    const bins=[];
-    for(let t=0;t<T;t++) if(Math.random()<Q) bins.push(t);
-    return bins;
-  });
-  placed=Array.from({length:T},()=>[]);
-}
-function mkBins(){
-  const c=document.getElementById('bp');
-  c.innerHTML='';
-  for(let t=0;t<T;t++){
-    const d=document.createElement('div');
-    d.className='bin';
-    d.innerHTML=`<span class="bin-lbl">Batch ${t+1}</span><div class="bin-balls" id="bp${t}"></div>`;
-    c.appendChild(d);
+  function generate(){
+    asgn = Array.from({length:N}, ()=>{
+      const bins=[];
+      for(let t=0;t<T;t++) if(Math.random()<Q) bins.push(t);
+      return bins;
+    });
+    placed = Array.from({length:T}, ()=>[]);
   }
-}
-function dropBall(binIdx,ballIdx,delay){
-  setTimeout(()=>{
-    const c=document.getElementById('bp'+binIdx);
-    if(!c)return;
-    const el=document.createElement('div');
-    el.className='ball';
-    el.style.cssText=`background:${COLORS[ballIdx].bg};color:${COLORS[ballIdx].fg}`;
-    el.textContent=LABELS[ballIdx];
-    c.appendChild(el);
-    placed[binIdx].push(ballIdx);
-    requestAnimationFrame(()=>setTimeout(()=>el.classList.add('show'),16));
-  },delay);
-}
-function updateStats(){
-  setTimeout(()=>{
-    let total=0,canary=0,empty=0;
+
+  function mkBins(){
+    const c = document.getElementById('smp-bp');
+    c.innerHTML = '';
     for(let t=0;t<T;t++){
-      total+=placed[t].length;
+      const d = document.createElement('div');
+      d.className = 'bin';
+      d.innerHTML = `<span class="bin-lbl">Batch ${t+1}</span><div class="bin-balls" id="smp-bp${t}"></div>`;
+      c.appendChild(d);
+    }
+  }
+
+  /* ── KEY FIX: use inline style animation, no class toggling ── */
+  function dropBall(binIdx, ballIdx, delay){
+    setTimeout(()=>{
+      const c = document.getElementById('smp-bp'+binIdx);
+      if(!c) return;
+      const el = document.createElement('div');
+      el.className = 'ball';
+      /* start invisible */
+      el.style.opacity = '0';
+      el.style.transform = 'scale(0) translateY(-8px)';
+      el.style.transition = 'none';
+      el.style.background = COLORS[ballIdx].bg;
+      el.style.color = COLORS[ballIdx].fg;
+      el.textContent = LABELS[ballIdx];
+      c.appendChild(el);
+      placed[binIdx].push(ballIdx);
+      /* force reflow, THEN enable transition and animate to visible */
+      void el.offsetWidth;
+      el.style.transition = 'opacity 0.25s ease, transform 0.32s cubic-bezier(0.34,1.56,0.64,1)';
+      el.style.opacity = '1';
+      el.style.transform = 'scale(1) translateY(0)';
+      updateStats();
+    }, delay);
+  }
+
+  function updateStats(){
+    let total=0, canary=0, empty=0;
+    for(let t=0;t<T;t++){
+      total += placed[t].length;
       if(placed[t].includes(N-1)) canary++;
       if(placed[t].length===0) empty++;
     }
-    document.getElementById('s-total').textContent=total;
-    document.getElementById('s-canary').textContent=canary;
-    document.getElementById('s-empty').textContent=empty;
-  },200);
-}
-function process(i){
-  asgn[i].forEach((bin,k)=>dropBall(bin,i,k*55));
-  updateStats();
-}
-function syncUI(){
-  const done=step>=N;
-  document.getElementById('pf').style.width=(step/N*100)+'%';
-  document.getElementById('bS').disabled=done||busy;
-  document.getElementById('bA').disabled=done||busy;
-  document.getElementById('inf').textContent=done
-    ?'All 10 balls placed. Click ↺ Reset for a new draw.'
-    :`Ball ${step} / 10 placed — ${N-step} remaining.`;
-}
-window.smpStep=function(){
-  if(step>=N||busy)return;
-  process(step++);syncUI();
-};
-window.smpAll=function(){
-  if(step>=N||busy)return;
-  busy=true;
-  const start=step;
-  Array.from({length:N-start},(_,i)=>{
-    setTimeout(()=>{
-      process(start+i);step++;
-      document.getElementById('pf').style.width=(step/N*100)+'%';
-      if(step>=N){busy=false;syncUI();}
-    },i*190);
-  });
-};
-window.smpReset=function(){
-  busy=false;step=0;
-  generate();mkBins();
-  document.getElementById('pf').style.width='0%';
-  document.getElementById('bS').disabled=false;
-  document.getElementById('bA').disabled=false;
-  document.getElementById('inf').textContent='Ready — click Step to place one ball at a time.';
-  document.getElementById('s-total').textContent='—';
-  document.getElementById('s-canary').textContent='—';
-  document.getElementById('s-empty').textContent='—';
-};
-smpReset();
+    document.getElementById('smp-total').textContent = total;
+    document.getElementById('smp-canary').textContent = canary;
+    document.getElementById('smp-empty').textContent = empty;
+  }
+
+  function process(i){
+    asgn[i].forEach((bin,k) => dropBall(bin, i, k*55));
+  }
+
+  function syncUI(){
+    const done = step >= N;
+    document.getElementById('smp-pf').style.width = (step/N*100)+'%';
+    document.getElementById('smp-bS').disabled = done || busy;
+    document.getElementById('smp-bA').disabled = done || busy;
+    document.getElementById('smp-inf').textContent = done
+      ? 'All 10 balls placed. Click ↺ Reset for a new draw.'
+      : `Ball ${step} / 10 placed — ${N-step} remaining.`;
+  }
+
+  window.smpStep = function(){
+    if(step>=N || busy) return;
+    process(step++);
+    syncUI();
+  };
+
+  window.smpAll = function(){
+    if(step>=N || busy) return;
+    busy = true;
+    const start = step;
+    Array.from({length: N-start}, (_,i)=>{
+      setTimeout(()=>{
+        process(start+i);
+        step++;
+        document.getElementById('smp-pf').style.width = (step/N*100)+'%';
+        if(step>=N){ busy=false; syncUI(); }
+      }, i*190);
+    });
+  };
+
+  window.smpReset = function(){
+    busy=false; step=0;
+    generate(); mkBins();
+    document.getElementById('smp-pf').style.width = '0%';
+    document.getElementById('smp-bS').disabled = false;
+    document.getElementById('smp-bA').disabled = false;
+    document.getElementById('smp-inf').textContent = 'Ready — click Step to place one ball at a time.';
+    document.getElementById('smp-total').textContent = '—';
+    document.getElementById('smp-canary').textContent = '—';
+    document.getElementById('smp-empty').textContent = '—';
+  };
+
+  smpReset();
 })();</script><hr><h3>Sampler 2: Shuffle Without Replacement (WOR)</h3><p>Shuffling is what virtually every non-private training loop already does: randomly permute the full dataset once per epoch, then slice it into fixed-size batches and iterate through them in order. Because the permutation is done without replacement, every record appears in <em>exactly one</em> batch per epoch — no more, no less.</p><p><strong>Pros:</strong> Fast, memory-friendly, and drops directly into existing non-private codebases. Also known to converge faster than Poisson-based SGD [6].</p><p><strong>Cons:</strong> Weaker privacy guarantee than Poisson; only a lower bound (not a tight upper bound) on $\varepsilon$ is currently known [3].</p><pre><code>Algorithm: Shuffle-WOR Sampler
 At the start of each epoch:
   Draw a random permutation π of {1, ..., n}
