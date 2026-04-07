@@ -129,32 +129,32 @@ smpReset();
 At the start of each epoch:
   Draw a random permutation π of {1, ..., n}
   Assign records π((t-1)·B + 1), ..., π(t·B) to batch S_t
-</code></pre><blockquote><p>💡 <strong>Live Demo： Shuffle - WOR:</strong></p></blockquote><div id="smp-root"><style>#smp-root * { box-sizing: border-box !important; margin: 0 !important; padding: 0 !important; }
-#smp-root { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; background: #f8f7f4 !important; color: #2c2c2a !important; padding: 18px 20px !important; max-width: 700px !important; margin: 0 auto !important; }
-#smp-root h1 { font-size: 15px !important; font-weight: 600 !important; margin-bottom: 2px !important; }
-#smp-root .smp-badge { display: inline-block !important; font-size: 10px !important; padding: 1px 7px !important; border-radius: 99px !important; margin-left: 6px !important; vertical-align: middle !important; font-weight: 500 !important; background:#FAEEDA !important; color:#633806 !important; }
-#smp-root .smp-sub { font-size: 11px !important; color: #888780 !important; margin: 4px 0 14px !important; line-height: 1.5 !important; display: block !important; }
-#smp-root .bins { display: flex !important; flex-direction: row !important; gap: 6px !important; width: 100% !important; }
-#smp-root .bin { flex: 1 !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; background: #fff !important; padding: 6px 4px !important; min-height: 108px !important; display: flex !important; flex-direction: column !important; }
-#smp-root .bin-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-align: center !important; margin-bottom: 4px !important; font-weight: 600 !important; letter-spacing: .06em !important; text-transform: uppercase !important; display: block !important; }
-#smp-root .bin-balls { flex: 1 !important; display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; gap: 3px !important; justify-content: center !important; align-content: flex-start !important; min-height: 70px !important; }
-#smp-root .ball { width: 22px !important; height: 22px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 9px !important; font-weight: 700 !important; opacity: 0 !important; transform: scale(0) translateY(-8px) !important; transition: opacity .25s ease, transform .32s cubic-bezier(.34,1.56,.64,1) !important; flex-shrink: 0 !important; }
-#smp-root .ball.show { opacity: 1 !important; transform: scale(1) translateY(0) !important; }
-#smp-root .ctrl { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 8px !important; margin-top: 12px !important; flex-wrap: wrap !important; }
-#smp-root .btn { font-size: 12px !important; padding: 5px 13px !important; border-radius: 7px !important; border: 0.5px solid #d3d1c7 !important; background: #fff !important; color: #2c2c2a !important; cursor: pointer !important; font-family: inherit !important; transition: background .1s !important; }
-#smp-root .btn:hover { background: #f1efe8 !important; }
-#smp-root .btn:disabled { opacity: .35 !important; cursor: default !important; }
-#smp-root .smp-inf { font-size: 11px !important; color: #888780 !important; flex: 1 !important; min-width: 140px !important; }
-#smp-root .pbar { height: 3px !important; background: #e8e6df !important; border-radius: 2px !important; margin-top: 7px !important; }
-#smp-root .pfil { height: 3px !important; background: #A0660A !important; border-radius: 2px !important; width: 0% !important; transition: width .3s !important; }
-#smp-root .stat-row { display: flex !important; gap: 10px !important; margin-top: 10px !important; }
-#smp-root .stat { background: #fff !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; padding: 6px 10px !important; flex: 1 !important; text-align: center !important; }
-#smp-root .stat-val { font-size: 17px !important; font-weight: 600 !important; color: #A0660A !important; display: block !important; }
-#smp-root .stat-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-transform: uppercase !important; letter-spacing: .05em !important; display: block !important; }
-#smp-root .order-row { margin-top: 10px !important; background: #fff !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; padding: 7px 10px !important; }
-#smp-root .order-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-transform: uppercase !important; letter-spacing: .05em !important; margin-bottom: 5px !important; display: block !important; }
-#smp-root .order-balls { display: flex !important; flex-direction: row !important; gap: 4px !important; flex-wrap: wrap !important; }
-#smp-root .oball { width: 22px !important; height: 22px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 9px !important; font-weight: 700 !important; flex-shrink: 0 !important; }</style><h1>Shuffle Without Replacement <span class="smp-badge">2 per batch</span></h1><span class="smp-sub">Balls are shuffled once then sliced into fixed batches of 2. Every ball appears <strong>exactly once</strong>, but positions are correlated — knowing one ball's batch reveals where others are not.</span><div class="bins" id="bs"></div><div class="order-row"><span class="order-lbl">Shuffle order (left → right)</span><div class="order-balls" id="order-display"></div></div><div class="stat-row"><div class="stat"><span class="stat-val" id="s-total">—</span><span class="stat-lbl">Total placements</span></div><div class="stat"><span class="stat-val" id="s-canary">—</span><span class="stat-lbl">Canary in batch</span></div><div class="stat"><span class="stat-val" id="s-full">—</span><span class="stat-lbl">Batches full</span></div></div><div class="ctrl"><button class="btn" id="bR" onclick="smpReset()">↺ Reset</button> <button class="btn" id="bS" onclick="smpStep()">Step →</button> <button class="btn" id="bA" onclick="smpAll()">Run All</button> <span class="smp-inf" id="inf">Ready — click Step to place one ball at a time.</span></div><div class="pbar"><div class="pfil" id="pf"></div></div></div><script>(function(){
+</code></pre><blockquote><p>💡 <strong>Live Demo： Shuffle - WOR:</strong></p></blockquote><div id="sw-root"><style>#sw-root * { box-sizing: border-box !important; margin: 0 !important; padding: 0 !important; }
+#sw-root { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; background: #f8f7f4 !important; color: #2c2c2a !important; padding: 18px 20px !important; max-width: 700px !important; margin: 0 auto !important; }
+#sw-root h1 { font-size: 15px !important; font-weight: 600 !important; margin-bottom: 2px !important; }
+#sw-root .smp-badge { display: inline-block !important; font-size: 10px !important; padding: 1px 7px !important; border-radius: 99px !important; margin-left: 6px !important; vertical-align: middle !important; font-weight: 500 !important; background:#FAEEDA !important; color:#633806 !important; }
+#sw-root .smp-sub { font-size: 11px !important; color: #888780 !important; margin: 4px 0 14px !important; line-height: 1.5 !important; display: block !important; }
+#sw-root .bins { display: flex !important; flex-direction: row !important; gap: 6px !important; width: 100% !important; }
+#sw-root .bin { flex: 1 !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; background: #fff !important; padding: 6px 4px !important; min-height: 108px !important; display: flex !important; flex-direction: column !important; }
+#sw-root .bin-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-align: center !important; margin-bottom: 4px !important; font-weight: 600 !important; letter-spacing: .06em !important; text-transform: uppercase !important; display: block !important; }
+#sw-root .bin-balls { flex: 1 !important; display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; gap: 3px !important; justify-content: center !important; align-content: flex-start !important; min-height: 70px !important; }
+#sw-root .ball { width: 22px !important; height: 22px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 9px !important; font-weight: 700 !important; opacity: 0 !important; transform: scale(0) translateY(-8px) !important; transition: opacity .25s ease, transform .32s cubic-bezier(.34,1.56,.64,1) !important; flex-shrink: 0 !important; }
+#sw-root .ball.show { opacity: 1 !important; transform: scale(1) translateY(0) !important; }
+#sw-root .ctrl { display: flex !important; flex-direction: row !important; align-items: center !important; gap: 8px !important; margin-top: 12px !important; flex-wrap: wrap !important; }
+#sw-root .btn { font-size: 12px !important; padding: 5px 13px !important; border-radius: 7px !important; border: 0.5px solid #d3d1c7 !important; background: #fff !important; color: #2c2c2a !important; cursor: pointer !important; font-family: inherit !important; transition: background .1s !important; }
+#sw-root .btn:hover { background: #f1efe8 !important; }
+#sw-root .btn:disabled { opacity: .35 !important; cursor: default !important; }
+#sw-root .smp-inf { font-size: 11px !important; color: #888780 !important; flex: 1 !important; min-width: 140px !important; }
+#sw-root .pbar { height: 3px !important; background: #e8e6df !important; border-radius: 2px !important; margin-top: 7px !important; }
+#sw-root .pfil { height: 3px !important; background: #A0660A !important; border-radius: 2px !important; width: 0% !important; transition: width .3s !important; }
+#sw-root .stat-row { display: flex !important; gap: 10px !important; margin-top: 10px !important; }
+#sw-root .stat { background: #fff !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; padding: 6px 10px !important; flex: 1 !important; text-align: center !important; }
+#sw-root .stat-val { font-size: 17px !important; font-weight: 600 !important; color: #A0660A !important; display: block !important; }
+#sw-root .stat-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-transform: uppercase !important; letter-spacing: .05em !important; display: block !important; }
+#sw-root .order-row { margin-top: 10px !important; background: #fff !important; border: 0.5px solid #d3d1c7 !important; border-radius: 8px !important; padding: 7px 10px !important; }
+#sw-root .order-lbl { font-size: 9px !important; color: #b4b2a9 !important; text-transform: uppercase !important; letter-spacing: .05em !important; margin-bottom: 5px !important; display: block !important; }
+#sw-root .order-balls { display: flex !important; flex-direction: row !important; gap: 4px !important; flex-wrap: wrap !important; }
+#sw-root .oball { width: 22px !important; height: 22px !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; font-size: 9px !important; font-weight: 700 !important; flex-shrink: 0 !important; }</style><h1>Shuffle Without Replacement <span class="smp-badge">2 per batch</span></h1><span class="smp-sub">Balls are shuffled once then sliced into fixed batches of 2. Every ball appears <strong>exactly once</strong>, but positions are correlated — knowing one ball's batch reveals where others are not.</span><div class="bins" id="bs"></div><div class="order-row"><span class="order-lbl">Shuffle order (left → right)</span><div class="order-balls" id="order-display"></div></div><div class="stat-row"><div class="stat"><span class="stat-val" id="sw-s-total">—</span><span class="stat-lbl">Total placements</span></div><div class="stat"><span class="stat-val" id="sw-s-canary">—</span><span class="stat-lbl">Canary in batch</span></div><div class="stat"><span class="stat-val" id="sw-s-full">—</span><span class="stat-lbl">Batches full</span></div></div><div class="ctrl"><button class="btn" id="sw-bR" onclick="swReset()">↺ Reset</button> <button class="btn" id="sw-bS" onclick="swStep()">Step →</button> <button class="btn" id="sw-bA" onclick="swAll()">Run All</button> <span class="smp-inf" id="sw-inf">Ready — click Step to place one ball at a time.</span></div><div class="pbar"><div class="pfil" id="sw-pf"></div></div></div><script>(function(){
 const N=10,T=5;
 const COLORS=[
   {bg:'#B5D4F4',fg:'#0C447C'},{bg:'#9FE1CB',fg:'#085041'},
@@ -218,9 +218,9 @@ function updateStats(){
       if(placed[t].includes(N-1)) canaryBatch=t+1;
       if(placed[t].length===2) full++;
     }
-    document.getElementById('s-total').textContent=total;
-    document.getElementById('s-canary').textContent=canaryBatch;
-    document.getElementById('s-full').textContent=full;
+    document.getElementById('sw-s-total').textContent=total;
+    document.getElementById('sw-s-canary').textContent=canaryBatch;
+    document.getElementById('sw-s-full').textContent=full;
   },150);
 }
 function process(i){
@@ -229,42 +229,42 @@ function process(i){
 }
 function syncUI(){
   const done=step>=N;
-  document.getElementById('pf').style.width=(step/N*100)+'%';
-  document.getElementById('bS').disabled=done||busy;
-  document.getElementById('bA').disabled=done||busy;
-  document.getElementById('inf').textContent=done
+  document.getElementById('sw-pf').style.width=(step/N*100)+'%';
+  document.getElementById('sw-bS').disabled=done||busy;
+  document.getElementById('sw-bA').disabled=done||busy;
+  document.getElementById('sw-inf').textContent=done
     ?'All 10 balls placed. Click ↺ Reset for a new draw.'
     :'Ball '+step+' / 10 placed — '+(N-step)+' remaining.';
 }
-window.smpStep=function(){
+window.swStep=function(){
   if(step>=N||busy)return;
   process(step++);
   syncUI();
 };
-window.smpAll=function(){
+window.swAll=function(){
   if(step>=N||busy)return;
   busy=true;
   const start=step;
   Array.from({length:N-start},function(_,i){
     setTimeout(function(){
       process(start+i);step++;
-      document.getElementById('pf').style.width=(step/N*100)+'%';
+      document.getElementById('sw-pf').style.width=(step/N*100)+'%';
       if(step>=N){busy=false;syncUI();}
     },i*190);
   });
 };
-window.smpReset=function(){
+window.swReset=function(){
   busy=false;step=0;
   generate();mkBins();showOrder();
-  document.getElementById('pf').style.width='0%';
-  document.getElementById('bS').disabled=false;
-  document.getElementById('bA').disabled=false;
-  document.getElementById('inf').textContent='Ready — click Step to place one ball at a time.';
-  document.getElementById('s-total').textContent='—';
-  document.getElementById('s-canary').textContent='—';
-  document.getElementById('s-full').textContent='—';
+  document.getElementById('sw-pf').style.width='0%';
+  document.getElementById('sw-bS').disabled=false;
+  document.getElementById('sw-bA').disabled=false;
+  document.getElementById('sw-inf').textContent='Ready — click Step to place one ball at a time.';
+  document.getElementById('sw-s-total').textContent='—';
+  document.getElementById('sw-s-canary').textContent='—';
+  document.getElementById('sw-s-full').textContent='—';
 };
-smpReset();
+swReset();
 })();</script><hr><h3>Sampler 3: Balls-and-Bins (BB)</h3><p>Balls-and-Bins is the newest of the three. Think of each data point as a ball, and each training step as a bin. At the start of every epoch, each ball is independently and uniformly tossed into one of the $T$ bins — meaning each record is assigned to exactly one training step, chosen uniformly at random. The key word is <em>independently</em>: unlike shuffle, knowing where record $i$ landed tells you nothing about where record $j$ landed.</p><pre><code>Algorithm: Balls-and-Bins Sampler
 At the start of each epoch:
   Initialize all S_t = ∅
