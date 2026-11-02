@@ -1,0 +1,9 @@
+Bundled license information:
+
+@noble/curves/utils.js:
+  /*! noble-curves - MIT License (c) 2022 Paul Miller (paulmillr.com) */
+
+@noble/post-quantum/utils.js:
+@noble/post-quantum/_crystals.js:
+@noble/post-quantum/ml-dsa.js:
+  /*! noble-post-quantum - MIT License (c) 2024 Paul Miller (paulmillr.com) */
