@@ -162,102 +162,103 @@ p {
   color: var(--ink-3);
 }
 
-/* Verdict */
-.verdict {
-  border-radius: var(--radius);
-  padding: 22px clamp(14px, 3vw, 28px);
-  border: 1px solid var(--line);
-  background: var(--surface);
+/* Verification certificate and unified photo panel */
+.verification-panel {
+  padding: 24px;
+  border: 1px solid #e4e8e5;
+  border-radius: 24px;
+  background: linear-gradient(155deg, #fff 60%, #f5f9f6);
+  box-shadow: 0 8px 30px rgb(26 51 36 / 0.05), 0 1px 3px rgb(26 51 36 / 0.04);
 }
+.verification-panel .drop-images { gap: 16px; }
+.verification-panel .drop-images img { border-radius: 14px; }
+.verdict {
+  --status-color: #64716a;
+  padding: 24px;
+  border: 1px solid #e4e8e5;
+  border-radius: 20px;
+  background: linear-gradient(155deg, #fff, #f5f9f6);
+  color: #24352b;
+}
+.verification-panel .verdict {
+  margin-top: 24px;
+  padding: 24px 0 0;
+  border: 0;
+  border-top: 1px solid #e1e8e3;
+  border-radius: 0;
+  background: transparent;
+}
+.verdict-pass { --status-color: #237453; }
+.verdict-fail, .verdict-error { --status-color: #be4141; }
 .verdict-head {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center;
 }
 .verdict-icon {
   flex: none;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   display: grid;
   place-items: center;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
-  background: var(--ink-3);
+  color: var(--status-color);
+  font: 500 1.6rem/1 var(--sans);
 }
-.verdict-pass {
-  background: var(--good-bg);
-  border-color: color-mix(in srgb, var(--good) 40%, var(--line));
-}
-.verdict-pass .verdict-icon {
-  background: var(--good);
-}
-.verdict-fail {
-  background: var(--bad-bg);
-  border-color: color-mix(in srgb, var(--bad) 40%, var(--line));
-}
-.verdict-fail .verdict-icon,
-.verdict-error .verdict-icon {
-  background: var(--bad);
-}
-.verdict-not-reference-image {
-  background: var(--neutral-bg);
+.verdict-icon svg { width: 60px; height: 60px; }
+.verdict .verdict-eyebrow {
+  margin: 0 0 5px;
+  font: 600 0.65rem/1.4 var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--status-color);
 }
 .verdict h2 {
-  margin: 0.1em 0 0.1em;
-  font-size: 1.5rem;
+  margin: 0;
+  font: 600 1.2rem/1.3 var(--sans);
+  letter-spacing: -0.025em;
 }
 .verdict-blurb {
-  margin: 0;
-  color: var(--ink-2);
+  margin: 7px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #657168;
 }
 .verdict-reasons {
-  margin: 12px 0 0;
-  padding-left: 1.2em;
+  margin: 16px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #657168;
 }
+.verdict-reasons p { margin: 0; }
 .verdict-halves {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-  margin-top: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  margin-top: 20px;
 }
 .half {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
-  padding: 10px 12px;
-  border-radius: 3px;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: rgb(229 237 232 / 0.48);
 }
+.half strong { font: 600 0.8rem/1.4 var(--sans); }
 .half small {
   display: block;
-  color: var(--ink-3);
+  font-size: 0.72rem;
+  color: #657168;
 }
-.mark {
-  font-weight: 700;
-}
-.mark.ok,
-.half.ok .mark {
-  color: var(--good);
-}
-.mark.bad,
-.half.bad .mark {
-  color: var(--bad);
-}
-.verdict-fineprint {
-  margin-top: 14px;
-  font-size: 0.92rem;
-}
-.verdict-fineprint summary {
-  cursor: pointer;
-  color: var(--accent);
-}
-.verdict-fineprint ul {
-  margin: 0.2em 0 0.6em;
-  padding-left: 1.2em;
-  color: var(--ink-2);
+.half .mark { width: 24px; height: 24px; flex: none; }
+.half .mark svg { width: 24px; height: 24px; }
+.mark.ok, .half.ok .mark { color: #237453; }
+.mark.bad, .half.bad .mark { color: #be4141; }
+@media (max-width: 480px) {
+  .verification-panel { padding: 16px; border-radius: 20px; }
+  .verdict-head { gap: 10px; }
+  .verdict-icon, .verdict-icon svg { width: 46px; height: 46px; }
+  .verdict h2 { font-size: 1.05rem; }
 }
 
 /* Part tags */
@@ -782,6 +783,23 @@ tr.row-X td:first-child {
   font-size: 0.85rem;
   padding: 6px 12px;
 }
+.verdict-media > .btn.small {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 20px;
+  min-height: 40px;
+  font: 500 0.85rem/1.25 var(--sans);
+  color: #fff;
+  background: rgb(40 40 40 / 0.72);
+  -webkit-backdrop-filter: blur(20px) saturate(1.6);
+  backdrop-filter: blur(20px) saturate(1.6);
+  box-shadow:
+    0 2px 6px rgb(0 0 0 / 0.15),
+    inset 0 0 0 0.5px rgb(255 255 255 / 0.2);
+}
+.verdict-media > .btn.small:hover {
+  background: rgb(40 40 40 / 0.85);
+}
 
 /* Full-size comparison dialog: the image fills the dialog and the controls
    float over it on frosted glass, the way iOS overlays badges on a photo. */
@@ -844,7 +862,6 @@ tr.row-X td:first-child {
 }
 
 /* Frosted-glass overlays */
-.compare-badge,
 .compare-close,
 .compare-hint,
 .compare-switch {
@@ -858,34 +875,25 @@ tr.row-X td:first-child {
     0 1px 2px rgb(0 0 0 / 0.25),
     inset 0 0 0 0.5px rgb(255 255 255 / 0.18);
 }
-.compare-badge {
-  top: 14px;
-  left: 14px;
-  padding: 6px 12px 7px;
-  font-size: 0.75rem;
-  line-height: 1.25;
-  pointer-events: none;
-  display: grid;
-}
-.compare-badge strong {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-.compare-badge span {
-  color: rgb(255 255 255 / 0.7);
-}
 .compare-close {
   top: 14px;
   right: 14px;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   display: grid;
   place-items: center;
   border: 0;
-  padding: 0 0 2px;
-  font: 400 1.35rem/1 var(--sans);
+  padding: 0;
   cursor: pointer;
+}
+.compare-close::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+}
+.compare-close svg {
+  display: block;
 }
 .compare-close:hover {
   background: rgb(70 70 70 / 0.7);
@@ -1002,10 +1010,14 @@ a:hover,
   text-align: center;
 }
 .drop-choose {
+  display: block;
   white-space: nowrap;
 }
+.embed-drop .drop-copy {
+  text-align: center;
+}
 .embed-drop .drop-main {
-  max-width: 29ch;
+  max-width: 31ch;
 }
 .drop-example img {
   width: 64px;
