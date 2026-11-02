@@ -194,7 +194,7 @@ p {
   display: flex;
   gap: 16px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .verdict-icon {
   flex: none;
