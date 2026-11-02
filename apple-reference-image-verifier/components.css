@@ -167,7 +167,7 @@ p {
   padding: 24px;
   border: 1px solid #e4e8e5;
   border-radius: 24px;
-  background: linear-gradient(155deg, #fff 60%, #f5f9f6);
+  background: #f7f8fa;
   box-shadow: 0 8px 30px rgb(26 51 36 / 0.05), 0 1px 3px rgb(26 51 36 / 0.04);
 }
 .verification-panel .drop-images { gap: 16px; }
@@ -188,7 +188,7 @@ p {
   border-radius: 0;
   background: transparent;
 }
-.verdict-pass { --status-color: #237453; }
+.verdict-pass { --status-color: #0f1729; }
 .verdict-fail, .verdict-error { --status-color: #be4141; }
 .verdict-head {
   display: flex;
@@ -224,30 +224,8 @@ p {
   color: #657168;
 }
 .verdict-reasons p { margin: 0; }
-.verdict-halves {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 8px;
-  margin-top: 20px;
-}
-.half {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  padding: 12px 10px;
-  border-radius: 12px;
-  background: rgb(229 237 232 / 0.48);
-}
-.half strong { font: 600 0.8rem/1.4 var(--sans); }
-.half small {
-  display: block;
-  font-size: 0.72rem;
-  color: #657168;
-}
-.half .mark { width: 24px; height: 24px; flex: none; }
-.half .mark svg { width: 24px; height: 24px; }
-.mark.ok, .half.ok .mark { color: #237453; }
-.mark.bad, .half.bad .mark { color: #be4141; }
+.mark.ok { color: #237453; }
+.mark.bad { color: #be4141; }
 @media (max-width: 480px) {
   .verification-panel { padding: 16px; border-radius: 20px; }
   .verdict-head { gap: 10px; }
