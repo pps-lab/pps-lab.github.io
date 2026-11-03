@@ -1,0 +1,132 @@
+# Privacy Preserving Systems Lab (PPS Lab)
+
+> The Privacy Preserving Systems Lab (PPS Lab) is a research group led by Anwar Hithnawi at the University of Toronto. We build, investigate, and research software systems for data privacy and data security. Research areas: Secure and Robust Collaborative Learning; End-to-End Designs for Data Privacy; Accessible Privacy Preserving Computation; Privacy Preserving Stream Analytics at Scale.
+
+Our mission is to develop technologies that enable applications to safely and securely interact with users' data while preserving individuals' privacy, and to make it easy for developers to build privacy-preserving applications. The lab was founded at ETH Zurich and is now at the University of Toronto.
+
+Website: https://pps-lab.com/. The full text of this site is at https://pps-lab.com/llms-full.txt. Machine-readable publication lists: https://pps-lab.com/publications.json and https://pps-lab.com/publications.bib.
+
+## Research areas
+
+- [Secure and Robust Collaborative Learning](https://pps-lab.com/research/ml-sec/): Machine learning algorithms continue to achieve remarkable success in a wide range of applications.
+- [End-to-End Designs for Data Privacy](https://pps-lab.com/research/e2e-privacy/): As increasing quantities of sensitive data are collected to gain valuable insights, the need to natively integrate privacy controls in data frameworks is growing in importance.
+- [Accessible Privacy Preserving Computation](https://pps-lab.com/research/fhe/): Privacy and security are gaining tremendous importance across all organizations as public perception of these issues has shifted and expectations, including regulatory demands, have increased.
+- [Privacy Preserving Stream Analytics at Scale](https://pps-lab.com/research/pp-stream/): Recent years have seen unprecedented growth in networked devices and services that continuously collect increasingly detailed information about individuals.
+
+## People
+
+- [Anwar Hithnawi](https://pps-lab.com/people/anwarhithnawi/): Group Leader. My research focuses on data privacy, applied cryptography, and systems.
+- [Hidde Lycklama](https://pps-lab.com/people/hiddelycklama/): Postdoc. I am a postdoc at the Privacy Preserving Systems Lab. My research focuses on the robustness and accountability of secure (collaborative) AI systems.
+- [Nikolay Avramov](https://pps-lab.com/people/nikolayavramov/): PhD Student. I am a first-year Ph.D. student at the Privacy Preserving Systems Lab, supervised by Prof. Anwar Hithnawi. I’m broadly interested in data provenance and accountability in machine learning systems.
+- [Ashwin Karthikeyan](https://pps-lab.com/people/ashwinkarthikeyan/): PhD Student. I am a first-year Ph.D. student at the Privacy Preserving Systems Lab under the supervision of Prof. Anwar Hithnawi.
+- Elizabeth Van Oorschot: PhD Student.
+- Areez Chishtie: Undergraduate Student.
+- [Boyan Litchev](https://www.linkedin.com/in/boyan-litchev-75a90a342/): Undergraduate Student.
+- [Hugo Ye](https://www.linkedin.com/in/hugoye/): Undergraduate Student.
+- Stefan Barna: Undergraduate Student.
+
+### Alumni
+
+- Gyorgy Rethy: Scientific Assistant.
+- Ulla Aeschbacher: Master Thesis Student.
+- Clément Thorens: Master Thesis Student.
+- Giacomo Fiorindo: Master Thesis Student.
+- Lena Csomor: Master Thesis Student.
+- Yu-Shan Wei: Master Thesis Student.
+- [Emanuel Opel](https://emanuelopel.ch/): Scientific Assistant.
+- [Patrick Jattke](https://comsec.ethz.ch/people/patrick-jattke/): Master Thesis Student.
+- [Miro Haller](https://mirohaller.com/): Scientific Assistant.
+- [Christian Knabenhans](https://cknabs.github.io/): Scientific Assistant.
+- [Isha Gupta](https://isha-gpt.github.io/): Scientific Assistant.
+- [Justus Croskery](https://www.linkedin.com/in/jcroskery/): Undergraduate Student.
+- [Sataphon (PF) Obra](https://site-sataphon-o-s-projects.vercel.app/): Undergraduate Student.
+- [Daniel Dervishi](https://www.linkedin.com/in/danieldervishi/): Undergraduate Student.
+- [Lukas Burkhalter](https://pps-lab.com/people/alumni/lukasburkhalter/): PhD Student. I am fourth year Ph.D. student in the Applied Cryptography Group and the Privacy Preserving Systems Lab at ETH Zurich, where I am advised by Prof. Kenny Paterson and Dr. Anwar Hithnawi.
+- [Alexander Viand](https://pps-lab.com/people/alexanderviand/): Making FHE accessible @ Intel Labs. I graduated from ETH Zurich in May 2023 and am now continuing similar research at Intel Labs.
+- [Nicolas Küchler](https://pps-lab.com/people/nicolaskuechler/): PhD Student. I'm a final year Ph.D. student in the Privacy Preserving Systems Lab at ETH Zurich. My research interests lie broadly at the intersection of computer systems and data privacy.
+
+## Publications
+
+- [Scaling Zero Knowledge UNSAT Verification via Normalized Chaining](https://pps-lab.com/publications/scaling-zkunsat/): Ashwin Karthikeyan, Ethan Kharitonov, Kuldeep S. Meel, Anwar Hithnawi. Conference on Logic for Programming, Artificial Intelligence, and Reasoning (LPAR 2026), 2026. Paper: https://arxiv.org/abs/2609.19353. Code: https://github.com/meelgroup/chain-normalize.git.
+- [Atlas: Efficient Verifiable Semantic Search](https://pps-lab.com/publications/atlas/): Nikolay Avramov, Hidde Lycklama, Alexander Viand, Anwar Hithnawi. Preprint, arXiv:2609.11841, 2026. Paper: https://arxiv.org/abs/2609.11841.
+- [Towards Practical Zero-Knowledge Proof for PSPACE](https://pps-lab.com/publications/zkpspace/): Ashwin Karthikeyan, Hengyu Liu, Kuldeep S. Meel, Ning Luo. IEEE Security and Privacy (Oakland) 2026, 2026. Paper: https://arxiv.org/abs/2511.15071. Code: https://github.com/PP-FM/zkqbf-suite.
+- [HEIR: A Universal Compiler for Homomorphic Encryption](https://pps-lab.com/publications/alex_specific/heir/): Asra Ali, Jaeho Choi, Bryant Gipson, Shruthi Gorantala, Jeremy Kun, Wouter Legiest, Lawrence Lim, Alexander Viand, Meron Zerihun Demissie, Hongren Zheng. Preprint, arXiv:2508.11095, 2025. Paper: https://arxiv.org/abs/2508.11095. Code: https://github.com/google/heir.
+- [DPolicy: Managing Privacy Risks Across Multiple Releases with Differential Privacy](https://pps-lab.com/publications/dpolicy/): Nicolas Küchler, Alexander Viand, Hidde Lycklama, Anwar Hithnawi. IEEE Security and Privacy (Oakland) 2025, 2025. Paper: https://arxiv.org/abs/2505.06747. Code: https://github.com/pps-lab/dpolicy. Slides: https://pps-lab.com/files/DPolicy_SP25_presentation.pdf.
+- [CoVault: Secure, Scalable Analytics of Personal Data](https://pps-lab.com/publications/CoVault/): Roberta De Viti, Isaac Sheff, Noemi Glaeser, Baltasar Dinis, Rodrigo Rodrigues, Bobby Bhattacharjee, Anwar Hithnawi, Deepak Garg, Peter Druschel. USENIX Security 2025, 2025. Paper: https://arxiv.org/pdf/2208.03784.pdf.
+- [Artemis: Efficient Commit-and-Prove SNARKs for zkML](https://pps-lab.com/publications/artemis/): Hidde Lycklama, Alexander Viand, Nikolay Avramov, Nicolas Küchler, Anwar Hithnawi. Preprint, arXiv:2409.12055, 2024. Paper: https://arxiv.org/abs/2409.12055. Code: https://github.com/pps-lab/artemis.
+- [Holding Secrets Accountable: Auditing Privacy-Preserving Machine Learning](https://pps-lab.com/publications/arc/): Hidde Lycklama, Alexander Viand, Nicolas Küchler, Christian Knabenhans, Anwar Hithnawi. USENIX Security 2024, 2024. Paper: https://arxiv.org/abs/2402.15780. Code: https://github.com/pps-lab/arc. Slides: https://pps-lab.com/files/Arc_USENIX24_presentation.pdf. Video: https://www.youtube.com/watch?v=sDHJredpZ3w.
+- [Cohere: Managing Differential Privacy in Large Scale Systems](https://pps-lab.com/publications/cohere/): Nicolas Küchler, Emanuel Opel, Hidde Lycklama, Alexander Viand, Anwar Hithnawi. IEEE Security and Privacy (Oakland) 2024, 2024. Paper: https://arxiv.org/abs/2301.08517. Code: https://github.com/pps-lab/cohere. Slides: https://pps-lab.com/images/main/cohere-sp24.pdf. Video: https://www.youtube.com/watch?v=FiBUDhQrBFs.
+- [vFHE: Verifiable Fully Homomorphic Encryption](https://pps-lab.com/publications/VFHE/): Christian Knabenhans, Alexander Viand, Antonio Merino-Gallardo, Anwar Hithnawi. Workshop on Encrypted Computing & Applied Homomorphic Cryptography (WAHC '24), 2024. Paper: https://arxiv.org/abs/2301.07041. Code: https://github.com/MarbleHE/ringSNARK. Video: https://www.youtube.com/watch?v=8bVHYi7avCU&t.
+- [RoFL: Robustness of Secure Federated Learning](https://pps-lab.com/publications/rofl/): Hidde Lycklama, Lukas Burkhalter, Alexander Viand, Nicolas Küchler, Anwar Hithnawi. IEEE Security and Privacy (Oakland) 2023, 2023. Paper: https://arxiv.org/abs/2107.03311. Code: https://github.com/pps-lab/rofl-project-code. Slides: https://pps-lab.com/files/RoFL_SP23_version_2024.pdf. Video: https://www.youtube.com/watch?v=Xi3fYGRgaBY&t=41s.
+- [HECO: Fully Homomorphic Encryption Compiler](https://pps-lab.com/publications/heco/): Alexander Viand, Patrick Jattke, Miro Haller, Anwar Hithnawi. USENIX Security 2023, 2023. Paper: https://arxiv.org/abs/2202.01649. Code: https://github.com/MarbleHE/ABC. Video: https://www.youtube.com/watch?v=SP3C6gLWIS4&t=30s.
+- [VF-PS: How to Select Important Participants in Vertical Federated Learning, Efficiently and Securely?](https://pps-lab.com/publications/VFPS/): Jiawei Jiang, Lukas Burkhalter, Fangcheng Fu, Bolin Ding, Bo Du, Anwar Hithnawi, Bo Li, Ce Zhang. NeurIPS (Spotlight) 2022, 2022. Paper: https://openreview.net/forum?id=vNrSXIFJ9wz.
+- [Cryptographic Auditing for Collaborative Learning](https://pps-lab.com/publications/camel_mlsafety/): Hidde Lycklama, Nicolas Küchler, Alexander Viand, Emanuel Opel, Lukas Burkhalter, Anwar Hithnawi. ML Safety Workshop at NeurIPS 2022, 2022. Paper: https://pps-lab.com/papers/camel_mlsafety.pdf. Poster: https://neurips.cc/media/PosterPDFs/NeurIPS%202022/65623.png.
+- [Zeph: Cryptographic Enforcement of End-to-End Data Privacy](https://pps-lab.com/publications/zeph/): Lukas Burkhalter, Nicolas Küchler, Alexander Viand, Hossein Shafagh, Anwar Hithnawi. USENIX OSDI 2021, 2021. Paper: https://www.usenix.org/system/files/osdi21-burkhalter.pdf. Code: https://github.com/pps-lab/zeph-artifact. Slides: https://www.usenix.org/system/files/osdi21_slides_burkhalter.pdf. Video: https://www.youtube.com/watch?v=sP1wacks1pc.
+- [SoK: Fully Homomorphic Encryption Compilers](https://pps-lab.com/publications/fhe/): Alexander Viand, Patrick Jattke, Anwar Hithnawi. IEEE Security and Privacy (Oakland) 2021, 2021. Paper: https://arxiv.org/abs/2101.07078. Code: https://github.com/MarbleHE/SoK. Slides: https://cdn.fhe.org/slides/fhe_tools_slides_alex_viand.pdf. Website: https://github.com/MarbleHE/SoK/wiki. Video: https://www.youtube.com/watch?v=SGoHbXG5kgk.
+- [Droplet: Decentralized Authorization and Access Control for Encrypted Data Streams](https://pps-lab.com/publications/droplet/): Hossein Shafagh, Lukas Burkhalter, Sylvia Ratnasamy, Anwar Hithnawi. USENIX Security 2020, 2020. Paper: https://www.usenix.org/system/files/sec20-shafagh.pdf. Code: https://github.com/dropletchain/droplet-engine. Slides: https://www.usenix.org/system/files/sec20_slides_shafagh.pdf. Website: https://dropletchain.github.io/. Video: https://www.usenix.org/conference/usenixsecurity20/presentation/shafagh.
+- [TimeCrypt: Encrypted Data Stream Processing at Scale with Cryptographic Access Control](https://pps-lab.com/publications/timecrypt/): Lukas Burkhalter, Anwar Hithnawi, Alexander Viand, Hossein Shafagh, Sylvia Ratnasamy. USENIX NSDI 2020, 2020. Paper: https://www.usenix.org/system/files/nsdi20-paper-burkhalter.pdf. Code: https://github.com/TimeCrypt/timecrypt. Slides: https://www.usenix.org/sites/default/files/conference/protected-files/nsdi20_slides_burkhalter.pdf. Website: https://timecrypt.io/. Video: https://www.usenix.org/conference/nsdi20/presentation/burkhalter.
+
+## Blog
+
+- [Verifying Apple Reference Images](https://pps-lab.com/blog/verifying-apple-reference-image/) (2026-11-02, Hidde Lycklama, Alexander Viand): With the new iPhone 18 Pro series, Apple created a new standard to verify the authenticity of images taken on iPhones, called Apple Reference Image.
+- [Secure LLM Inference with MP-SPDZ](https://pps-lab.com/blog/secure-token-prediction-with-bert-in-mp-spdz/) (2026-05-24, Hidde Lycklama): LLMs are now the standard benchmark in encrypted AI research. Producing real next-token predictions using research frameworks, however, remains challenging.
+- [Does It Matter How You Pick Your Batches?](https://pps-lab.com/student-blogs/does-it-matter-how-you-pick-your-batches/) (2026-04-13, Andy Cai, Yvonne Yifeng Peng): Shuffle-without-replacement is widely used as a drop-in for Poisson subsampling in DP-SGD — but the two carry very different privacy guarantees, and the gap can reach 10× in the worst case.
+- [Private Set Intersection for Training Data Auditing](https://pps-lab.com/student-blogs/private-set-intersection-for-training-data-auditing/) (2026-04-12, Angela Sha, Sierra Wyllie): We use fuzzy private set intersection between an individual's images and a training set to determine if their data was used to train a model.
+- [zkPi+](https://pps-lab.com/student-blogs/zkpi-plus/) (2026-04-08, Ethan Bodzioney, Matthew Toohey): zkPi is a tool capable of verifying Lean proofs independently without sharing any information about the inner workings of the proof (zero-knowledge).
+- [Lean4FHE](https://pps-lab.com/student-blogs/lean4fhe/) (2026-04-08, Ashwin Karthikeyan, Maite Kramarz): A verified compiler from Boolean circuits to GSW homomorphic encryption circuits, written and proven correct in Lean 4 with Mathlib.
+- [A primer on the FHEW & TFHE schemes](https://pps-lab.com/blog/fhew_tfhe/) (2023-10-27, Christian Knabenhans): Fully Homomorphic Encryption (FHE) is a cryptographic primitive that allows one to perform computations on encrypted data.
+- [Arithmetizing FHE in Circom](https://pps-lab.com/blog/fhe_arithmetization/) (2023-10-27, Christian Knabenhans): Fully Homomorphic Encryption (FHE) allows one to perform computations on encrypted data, making it particularly useful for providing privacy to computations.
+
+## Teaching
+
+- [CSC364: Foundations of Computer Security](https://pps-lab.com/teaching/comsec/2025/): Fall 2025
+- [CSC364: Foundations of Computer Security](https://pps-lab.com/teaching/comsec/): Fall 2026
+- [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2025/): Winter 2025
+- [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/): Fall 2026
+- [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2026w/): Winter 2026
+
+## News
+
+- 2025-08-16: Anwar received the Google Research Scholar Award!
+- 2025-07-16: Anwar received the Intel Outstanding Researcher Award!
+- 2025-05-22: This week, Nicolas Küchler [Photo] and Hidde Lycklama [Photo] successfully defended their Ph.D. theses. Congratulations to our newly minted doctors! [Photo] [Photo] [Photo] .
+- 2025-03-10: DPolicy is accepted at IEEE S&P (Oakland) 2025!
+- 2024-06-10: Arc is accepted at USENIX Security 2024!
+- 2023-11-01: Cohere is accepted at IEEE S&P (Oakland) 2024!
+- 2023-07-14: We received the best talk award at HotPETs for our work on "Bridging the Gap between Privacy Incidents and PETs"!
+- 2023-04-24: Alex successfully defended his PhD thesis last week. Congratulations, Dr. Alex! Photo .
+- 2023-04-01: RoFL is accepted at IEEE S&P (Oakland) 2023!
+- 2023-03-24: Chris gave talks about Verifiable Fully Homomorphic Encryption at UC Berkeley Sec. Seminar, Stanford Sec. Seminar, Intel Labs, UCSD (invited guest lecture), and the FHE.org conference. Check the talk here .
+- 2022-11-20: We received the Google Research Award! This award will foster a new collaboration with Google that aims to bring efficient and scheme-agnostic FHE support to the TensorFlow framework.
+- 2022-11-18: HECO is accepted at USENIX Security 2023!
+- 2022-09-22: Congratulations to Lukas Burkhalter, who successfully defended his Ph.D. thesis this week! Photo .
+- 2022-07-31: We have a new group photo. Here is a photo of us!
+- 2022-06-22: Anwar gave a talk about Security and Robustness of Collaborative Learning Systems at the FLOW Seminar .
+- 2022-06-01: Alex gave talks at the FHE.org Conference and Protocol Labs Research Seminar about HECO, our FHE Compiler.
+- 2022-01-10: Anwar gave an invited talk at Facebook research labs about Systems Designs for End-to-End Privacy!
+- 2021-12-10: Anwar gave invited talks at Brown University and University of Wisconsin-Madison about Cryptographic Enforcement of End-to-End Data Privacy!
+- 2021-11-11: Alex gave talks at Stanford Software Lunch Seminar and NVIDIA about FHE Development Ecosystem.
+- 2021-09-30: Anwar gave a talk at the launch of Intel's Crypto Frontier Center!
+- 2021-08-12: Our lab received the Semiconductor Research Corporation Grant! This grant aims at expanding our efforts to build an ecosystem for developing and deploying FHE applications.
+- 2021-08-05: We received the Facebook Research Award!
+- 2021-08-04: Nicolas gave talks at Stanford Security Seminar and UC Berkeley about Zeph.
+- 2021-08-01: Alex started a research internship at Intel!
+- 2021-07-20: We had our first social outing as a group. Here is a photo of us!
+- 2021-06-17: Alex gave invited talks about "FHE Development Ecosystem: Tools, Compilers & Challenges" at Stanford Sec. Seminar , UC Berkeley, Intel, FHE.org. Check the talk here and an extended version of the talk, ending with an interesting discussion on FHE tools development here.
+- 2021-06-01: Lukas started a research internship at Brave !
+- 2021-03-14: Zeph is accepted at USENIX OSDI 2021!
+- 2021-03-01: Hidde Lycklama joins the PPS Lab as a Ph.D. student. Welcome, Hidde!
+- 2020-12-28: Upcoming paper on Fully Homomorphic Encryption Compilers is accepted at the IEEE S&P 2021!
+- 2020-12-15: We received the ETH Research Grant! This grant aims at expanding our efforts on end-to-end systems designs for data privacy.
+- 2020-09-01: Nicolas Küchler joins the PPS Lab as a Ph.D. student. Welcome, Nicolas!
+- 2020-05-16: Droplet is accepted at USENIX Security Symposium 2020!
+- 2020-05-13: Lukas Burkhalter receives the Microsoft Research Ph.D. Award! Congrats, Lukas!
+- 2020-02-25: TimeCrypt is accepted at USENIX NSDI 2020!
+- 2020-02-01: > Hello, World! Anwar Hithnawi got awarded the SNSF Ambizione grant to start the PPS Lab at ETH Zurich.
+
+## Optional
+
+- [Sitemap](https://pps-lab.com/sitemap.xml)
+- [Publications as JSON](https://pps-lab.com/publications.json)
+- [Publications as BibTeX](https://pps-lab.com/publications.bib)
+- [GitHub organization](https://github.com/pps-lab)
