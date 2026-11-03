@@ -135,6 +135,25 @@ p {
   margin: 14px 0 0;
   color: var(--ink-2);
 }
+.linklike.loading {
+  cursor: progress;
+}
+.linklike.loading::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border: 2px solid var(--line);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  margin-left: 0.4em;
+  vertical-align: -0.1em;
+  animation: spin 0.8s linear infinite;
+}
+.example-size {
+  color: var(--ink-3);
+  font-size: 0.9em;
+}
 .status.busy::before {
   content: "";
   display: inline-block;
@@ -1078,6 +1097,9 @@ a:hover,
 }
 .drop-example .drop-sub {
   margin: 0;
+}
+.drop-example .example-size {
+  display: block;
 }
 @media (max-width: 480px) {
   .embed-drop .drop {

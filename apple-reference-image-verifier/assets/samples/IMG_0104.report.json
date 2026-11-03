@@ -1,9 +1,9 @@
 {
- "toolVersion": "0.1.0",
- "analyzedAt": "2026-11-03T15:01:11.756Z",
+ "toolVersion": "0.2.0",
+ "analyzedAt": "2026-11-03T15:22:27.747Z",
  "file": {
-  "name": "IMG_0071.JPG",
-  "size": 7805194,
+  "name": "IMG_0104.jpeg",
+  "size": 12478250,
   "container": "jpeg",
   "width": 5712,
   "height": 4284,
@@ -11,8 +11,9 @@
    "make": "Apple",
    "model": "iPhone 18 Pro",
    "software": "27.0.1",
-   "dateTimeOriginal": "2026:10:28 10:06:19",
+   "dateTimeOriginal": "2026:11:03 14:36:24",
    "exifVersion": "2.32",
+   "makerNote": "apple",
    "appleReferenceFlag": 8
   },
   "format": {
@@ -29,15 +30,15 @@
  },
  "carrier": {
   "kind": "app3-chunks",
-  "chunkCount": 39,
-  "carrierBytes": 2501149,
-  "firstChunkOffset": 29224,
+  "chunkCount": 46,
+  "carrierBytes": 2982369,
+  "firstChunkOffset": 6438,
   "leadingField": 0
  },
  "processed": {
-  "size": 2496816,
-  "width": 3024,
-  "height": 4032,
+  "size": 2977259,
+  "width": 2705,
+  "height": 2029,
   "components": 3,
   "format": {
    "standard": "ISO/IEC 10918-1 (JPEG)",
@@ -48,7 +49,7 @@
    "subsampling": "4:2:0",
    "jfifVersion": "1.01",
    "exifVersion": "2.21",
-   "restartInterval": 189
+   "restartInterval": 170
   },
   "trailingBytes": 0,
   "segments": [
@@ -86,14 +87,14 @@
    },
    {
     "offset": 1054,
-    "length": 1018,
+    "length": 518,
     "marker": 234,
     "name": "APP10",
     "detail": "Apple AROT (scan index)",
     "part": "P"
    },
    {
-    "offset": 2072,
+    "offset": 1572,
     "length": 85,
     "marker": 235,
     "name": "APP11",
@@ -101,7 +102,7 @@
     "part": "P"
    },
    {
-    "offset": 2157,
+    "offset": 1657,
     "length": 88,
     "marker": 235,
     "name": "APP11",
@@ -109,7 +110,7 @@
     "part": "P"
    },
    {
-    "offset": 2245,
+    "offset": 1745,
     "length": 22157,
     "marker": 235,
     "name": "APP11",
@@ -117,15 +118,15 @@
     "part": "S"
    },
    {
-    "offset": 24402,
+    "offset": 23902,
     "length": 19,
     "marker": 192,
     "name": "SOF0",
-    "detail": "Frame header 3024×4032, baseline DCT",
+    "detail": "Frame header 2705×2029, baseline DCT",
     "part": "C"
    },
    {
-    "offset": 24421,
+    "offset": 23921,
     "length": 33,
     "marker": 196,
     "name": "DHT",
@@ -133,7 +134,7 @@
     "part": "C"
    },
    {
-    "offset": 24454,
+    "offset": 23954,
     "length": 183,
     "marker": 196,
     "name": "DHT",
@@ -141,7 +142,7 @@
     "part": "C"
    },
    {
-    "offset": 24637,
+    "offset": 24137,
     "length": 33,
     "marker": 196,
     "name": "DHT",
@@ -149,7 +150,7 @@
     "part": "C"
    },
    {
-    "offset": 24670,
+    "offset": 24170,
     "length": 183,
     "marker": 196,
     "name": "DHT",
@@ -157,7 +158,7 @@
     "part": "C"
    },
    {
-    "offset": 24853,
+    "offset": 24353,
     "length": 69,
     "marker": 219,
     "name": "DQT",
@@ -165,7 +166,7 @@
     "part": "C"
    },
    {
-    "offset": 24922,
+    "offset": 24422,
     "length": 69,
     "marker": 219,
     "name": "DQT",
@@ -173,7 +174,7 @@
     "part": "C"
    },
    {
-    "offset": 24991,
+    "offset": 24491,
     "length": 6,
     "marker": 221,
     "name": "DRI",
@@ -181,7 +182,7 @@
     "part": "C"
    },
    {
-    "offset": 24997,
+    "offset": 24497,
     "length": 14,
     "marker": 218,
     "name": "SOS",
@@ -189,15 +190,15 @@
     "part": "C"
    },
    {
-    "offset": 25011,
-    "length": 2471803,
+    "offset": 24511,
+    "length": 2952746,
     "marker": null,
     "name": "scan",
     "detail": "Entropy-coded pixel data",
     "part": "C"
    },
    {
-    "offset": 2496814,
+    "offset": 2977257,
     "length": 2,
     "marker": 217,
     "name": "EOI",
@@ -208,7 +209,7 @@
  },
  "boxes": {
   "header": {
-   "offset": 2072,
+   "offset": 1572,
    "length": 85,
    "uuid": "3c32166f-ae98-414c-a0b1-da48dc9cd85e",
    "instance": 1,
@@ -219,59 +220,59 @@
    ]
   },
   "timestamps": {
-   "offset": 2157,
+   "offset": 1657,
    "length": 88,
    "uuid": "1c4f261e-6184-4f47-bada-217c1c41d242",
    "instance": 2,
    "innerUuid": "3cd5877f-7041-44de-b48c-6fc34ae3ee6a",
    "unix": [
-    1793177978,
-    1793178387,
-    1793178660
+    1793712218,
+    1793713136,
+    1793714777
    ],
    "iso": [
-    "2026-10-28T08:59:38.000Z",
-    "2026-10-28T09:06:27.000Z",
-    "2026-10-28T09:11:00.000Z"
+    "2026-11-03T13:23:38.000Z",
+    "2026-11-03T13:38:56.000Z",
+    "2026-11-03T14:06:17.000Z"
    ]
   },
   "signature": {
-   "offset": 2245,
+   "offset": 1745,
    "length": 22157,
    "uuid": "62030736-1e8d-403d-b1ce-ef0744a9c392",
    "instance": 3,
    "innerUuid": "f3c1115f-eee7-401b-9939-9749f4467d66",
-   "innerOffset": 2281,
+   "innerOffset": 1781,
    "innerLength": 22121,
-   "sigLenOffset": 2309,
-   "sigDerOffset": 2313,
+   "sigLenOffset": 1809,
+   "sigDerOffset": 1813,
    "sigDerLength": 5027,
-   "bundleLenOffset": 7340,
-   "bundleOffset": 7344,
+   "bundleLenOffset": 6840,
+   "bundleOffset": 6844,
    "bundleLength": 17048,
-   "trailerOffset": 24392,
+   "trailerOffset": 23892,
    "trailerLength": 10,
-   "trailerHex": "00 01 00 00 00 00 6a e1 bc 24",
-   "developedAtUnix": 1793178660,
-   "developedAt": "2026-10-28T09:11:00.000Z"
+   "trailerHex": "00 01 00 00 00 00 6a e9 ea 59",
+   "developedAtUnix": 1793714777,
+   "developedAt": "2026-11-03T14:06:17.000Z"
   },
   "all": [
    {
-    "offset": 2072,
+    "offset": 1572,
     "length": 85,
     "uuid": "3c32166f-ae98-414c-a0b1-da48dc9cd85e",
     "instance": 1,
     "sequence": 1
    },
    {
-    "offset": 2157,
+    "offset": 1657,
     "length": 88,
     "uuid": "1c4f261e-6184-4f47-bada-217c1c41d242",
     "instance": 2,
     "sequence": 1
    },
    {
-    "offset": 2245,
+    "offset": 1745,
     "length": 22157,
     "uuid": "62030736-1e8d-403d-b1ce-ef0744a9c392",
     "instance": 3,
@@ -286,31 +287,31 @@
   "ranges": {
    "preamble": [
     0,
-    2245
+    1745
    ],
    "signatureParameters": [
-    2245,
-    24402
+    1745,
+    23902
    ],
    "excluded": [
-    2309,
-    7340
+    1809,
+    6840
    ],
    "content": [
-    24402,
-    2496816
+    23902,
+    2977259
    ]
   },
-  "preambleHash": "07099d0c1cda84c35ba44de830520923285bacfe58b68f87f3db4d6b34c2b635462960aec749c05f0a4e0f6d7f73e23391496240e2d54e39b6ecfa73c5019bf0",
-  "signatureParametersHash": "7960f5f4f01cabdbe0785b3ad5779ac1363bc4f7805ce703df5f02b13ef50716dfba40de4c97f9c25994fa6d767548897bd97efe40d1b745fc31b285982c9937",
-  "contentHash": "d6b3bc51fae1ee567ef4a6ae14bd568a51cd817cbf857460c7b60af265a9cea7739155f8cbffa21056229d7e1f92dadba894785095917acd6bea7e91121e9735",
-  "combinedHash": "aa964ad91091ab5777ada52f1d86eab5060758831832776ea622ae6a06e3ffeb73e3d44ca121bf6916f15ba82b5580637c9e6961a7a7d9004bfa799b81b0b2b3",
+  "preambleHash": "b54b37d22bde03c06746e28b0becf4d7eac6ab74fa0f97c92577841366dd68ec3a7f9eb5c42be1d56e632987519c720096c1684f2762f2a9be4cdf8515d721c0",
+  "signatureParametersHash": "9d7b16eeeed9ee13e5bb1bfd2aa9c5acc531ec21160575b48c737bf6fce12d8579c0b349c4a098e792264927d2a0c000cd02ee6cc9e54ffb445425a3d38dfb43",
+  "contentHash": "24cfc694a67f054096143633032de00746a8768fcde9c936a65710775b0e0651285535866c3899c929455ce5ac801a1bf68c08b8e0bec3ea5b8063d039e35a49",
+  "combinedHash": "62b7aabdd9651e0bf8a7d0ea08bcefd299b2b053f1233e3dd0e136dda7943d91d96bff231f04767983e2530356d05c785622a41a52e7797b8335d364ff41c757",
   "mPrime": {
    "prefix": "CompositeAlgorithmSignatures2025",
    "label": "COMPSIG-MLDSA87-RSA3072-PSS-SHA512",
    "ctxLength": 0,
    "ctx": "",
-   "digest": "aa964ad91091ab5777ada52f1d86eab5060758831832776ea622ae6a06e3ffeb73e3d44ca121bf6916f15ba82b5580637c9e6961a7a7d9004bfa799b81b0b2b3",
+   "digest": "62b7aabdd9651e0bf8a7d0ea08bcefd299b2b053f1233e3dd0e136dda7943d91d96bff231f04767983e2530356d05c785622a41a52e7797b8335d364ff41c757",
    "totalBytes": 131
   }
  },
@@ -332,7 +333,7 @@
   },
   "valid": true,
   "signerSerial": "34419077115C715CD3035EF90C2EC950",
-  "mPrimeHex": "436f6d706f73697465416c676f726974686d5369676e61747572657332303235434f4d505349472d4d4c44534138372d525341333037322d5053532d53484135313200aa964ad91091ab5777ada52f1d86eab5060758831832776ea622ae6a06e3ffeb73e3d44ca121bf6916f15ba82b5580637c9e6961a7a7d9004bfa799b81b0b2b3"
+  "mPrimeHex": "436f6d706f73697465416c676f726974686d5369676e61747572657332303235434f4d505349472d4d4c44534138372d525341333037322d5053532d5348413531320062b7aabdd9651e0bf8a7d0ea08bcefd299b2b053f1233e3dd0e136dda7943d91d96bff231f04767983e2530356d05c785622a41a52e7797b8335d364ff41c757"
  },
  "certificates": [
   {
@@ -385,10 +386,23 @@
    "role": "root",
    "subject": "C=US, O=Apple Inc., CN=Apple Prove ML-DSA RSA Root CA G1",
    "subjectCN": "Apple Prove ML-DSA RSA Root CA G1",
+   "issuer": "C=US, O=Apple Inc., CN=Apple Prove ML-DSA RSA Root CA G1",
+   "issuerCN": "Apple Prove ML-DSA RSA Root CA G1",
+   "serial": "63244EB094AA7DB3150CF12216B4A4FC",
+   "notBefore": "2026-03-18T19:12:20.000Z",
+   "notAfter": "2046-03-13T19:12:19.000Z",
    "sha256": "8D7224AE1CCB6163201EBCBB9BB43907BD3491CCDE20E0C711960CA8AF358A5B",
    "algorithmOid": "1.3.6.1.5.5.7.6.52",
    "algorithm": "id-MLDSA87-RSA3072-PSS-SHA512",
+   "derLength": 8342,
    "embeddedInFile": false,
+   "verifiedBy": "Apple Prove ML-DSA RSA Root CA G1",
+   "signature": {
+    "mldsa": true,
+    "rsa": true,
+    "valid": true
+   },
+   "withinValidity": true,
    "isTrustAnchor": true
   }
  ],
