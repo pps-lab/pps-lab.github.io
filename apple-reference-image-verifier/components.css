@@ -660,9 +660,30 @@ tr.row-X td:first-child {
   color: var(--ink-2);
   font-weight: 600;
 }
+.cert summary {
+  cursor: pointer;
+  list-style: none;
+}
+.cert summary::-webkit-details-marker {
+  display: none;
+}
 .cert h4 {
-  margin: 4px 0 8px;
+  margin: 4px 0 0;
   font-size: 1.05rem;
+}
+.cert h4::after {
+  content: "▸";
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--ink-3);
+  font-size: 0.85em;
+  transition: transform 0.15s;
+}
+.cert[open] h4::after {
+  transform: rotate(90deg);
+}
+.cert[open] summary {
+  margin-bottom: 8px;
 }
 .cert dl {
   display: grid;
