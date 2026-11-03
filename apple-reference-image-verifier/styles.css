@@ -36,7 +36,7 @@ main,
   display: grid;
   grid-template-columns: 1.35fr 1fr;
   gap: 40px;
-  align-items: center;
+  align-items: start;
   padding: 32px;
   background: var(--surface-2);
 }
