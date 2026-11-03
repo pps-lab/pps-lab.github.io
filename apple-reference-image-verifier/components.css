@@ -402,6 +402,25 @@ p {
   stroke: var(--ink);
   stroke-width: 1.5;
 }
+.bm-plot {
+  position: relative;
+}
+.bm-tip {
+  position: absolute;
+  top: 6px;
+  transform: translate(-50%, -100%);
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--ink);
+  color: var(--surface-2);
+  font: 600 12px var(--mono);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 2;
+}
+.bm-tip[hidden] {
+  display: none;
+}
 .bm-legend {
   display: flex;
   flex-wrap: wrap;
