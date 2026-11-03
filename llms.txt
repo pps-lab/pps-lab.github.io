@@ -42,7 +42,7 @@ Website: https://pps-lab.com/. The full text of this site is at https://pps-lab.
 - [Sataphon (PF) Obra](https://site-sataphon-o-s-projects.vercel.app/): Undergraduate Student.
 - [Daniel Dervishi](https://www.linkedin.com/in/danieldervishi/): Undergraduate Student.
 - [Lukas Burkhalter](https://pps-lab.com/people/alumni/lukasburkhalter/): PhD Student. I am fourth year Ph.D. student in the Applied Cryptography Group and the Privacy Preserving Systems Lab at ETH Zurich, where I am advised by Prof. Kenny Paterson and Dr. Anwar Hithnawi.
-- [Alexander Viand](https://pps-lab.com/people/alexanderviand/): Making FHE accessible @ Intel Labs. I graduated from ETH Zurich in May 2023 and am now continuing similar research at Intel Labs.
+- [Alexander Viand](https://pps-lab.com/people/alexanderviand/): Postdoc at Cambridge · Belfort Labs. I am a postdoctoral researcher in the Cambridge Compiler Lab at the University of Cambridge in addition to my work at Belfort Labs.
 - [Nicolas Küchler](https://pps-lab.com/people/nicolaskuechler/): PhD Student. I'm a final year Ph.D. student in the Privacy Preserving Systems Lab at ETH Zurich. My research interests lie broadly at the intersection of computer systems and data privacy.
 
 ## Publications
@@ -79,11 +79,11 @@ Website: https://pps-lab.com/. The full text of this site is at https://pps-lab.
 
 ## Teaching
 
-- [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2026w/): Winter 2026
 - [CSC364: Foundations of Computer Security](https://pps-lab.com/teaching/comsec/2025/): Fall 2025
 - [CSC364: Foundations of Computer Security](https://pps-lab.com/teaching/comsec/): Fall 2026
 - [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2025/): Winter 2025
 - [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/): Fall 2026
+- [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2026w/): Winter 2026
 
 ## News
 
