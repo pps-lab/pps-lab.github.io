@@ -206,12 +206,12 @@ I am an Assistant Professor of Computer Science and a Canada Research Chair in S
  * [CSC2231](https://pps-lab.com/teaching/pets) - Privacy-Enhancing Technologies, Fall 2026, Winter 2026, Winter 2025.
 
 ### Selected Honors & Awards: 
+ * Canada Research Chair in Security and Privacy (Tier 2).
  * Google Research Scholar.
  * Intel's Outstanding Researcher Awards.
  * Google Research Award.
  * Rising Stars in EECS.
  * Facebook Research Award.
- * Semiconductor Research Corporation Grant.
  * ETH Research Grant.
  * SNF Ambizione Grant. 
  * SNF Postdoctoral Fellowship.
