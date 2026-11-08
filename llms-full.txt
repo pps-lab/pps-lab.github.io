@@ -1,6 +1,6 @@
 # Privacy Preserving Systems Lab (PPS Lab)
 
-> The Privacy Preserving Systems Lab (PPS Lab) is a research group led by Anwar Hithnawi at the University of Toronto. We build, investigate, and research software systems for data privacy and data security. Research areas: Secure and Robust Collaborative Learning; End-to-End Designs for Data Privacy; Accessible Privacy Preserving Computation; Privacy Preserving Stream Analytics at Scale.
+> The Privacy Preserving Systems Lab (PPS Lab) is a research group led by Anwar Hithnawi at the University of Toronto. We build, investigate, and research software systems for data privacy and data security. Research areas: Secure and Robust Collaborative Learning; End-to-End Designs for Data Privacy; Accessible Privacy Preserving Computation; Privacy Preserving Stream Analytics at Scale; Cryptographic Provenance; Succinct Software Verification; Verifiable AI; Verifiable Digital Interactions.
 
 Our mission is to develop technologies that enable applications to safely and securely interact with users' data while preserving individuals' privacy, and to make it easy for developers to build privacy-preserving applications. The lab was founded at ETH Zurich and is now at the University of Toronto.
 
@@ -120,6 +120,30 @@ that meets the scalability and low-latency requirements associated with time-ser
 supporting a rich set of functionalities and analytics on encrypted time series data.
 
 •  Droplet  (Published in USENIX Security’20): Droplet is a new decentralized authorization service that enables fine-grained secure sharing of encrypted data streams without the need for trusted intermediaries. We devise a design that couples authorization with a new crypto-enforced access control scheme to mitigate the limitations of current authorization services caused by the lack of cryptographic guarantees and secure sharing in end-to-end encrypted systems through static policies.
+
+## Cryptographic Provenance
+
+URL: https://pps-lab.com/research/cryptographic-provenance/
+
+
+
+## Succinct Software Verification
+
+URL: https://pps-lab.com/research/succinct-software-verification/
+
+
+
+## Verifiable AI
+
+URL: https://pps-lab.com/research/verifiable-ai/
+
+
+
+## Verifiable Digital Interactions
+
+URL: https://pps-lab.com/research/verifiable-digital-interactions/
+
+
 
 
 # People

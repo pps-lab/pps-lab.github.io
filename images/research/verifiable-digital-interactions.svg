@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" stroke="#111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <clipPath id="human"><rect x="16.5" y="30.5" width="41" height="61" rx="2"/></clipPath>
+    <clipPath id="agent"><rect x="68.5" y="30.5" width="41" height="61" rx="2"/></clipPath>
+  </defs>
+  <g transform="rotate(-6 37 61)">
+    <rect x="10" y="24" width="54" height="74" rx="6" fill="#fff"/>
+    <g clip-path="url(#human)" stroke="none">
+      <rect x="16.5" y="30.5" width="41" height="61" fill="#eceef2"/>
+      <circle cx="37" cy="48" r="9.5" fill="#7e8087"/>
+      <path d="M20 92V80c0-8 7.500-13 17-13s17 5 17 13v12Z" fill="#7e8087"/>
+    </g>
+  </g>
+  <g transform="rotate(6 89 61)">
+    <rect x="62" y="24" width="54" height="74" rx="6" fill="#fff"/>
+    <g clip-path="url(#agent)" stroke="none">
+      <rect x="68.500" y="30.500" width="41" height="61" fill="#eceef2"/>
+      <rect x="87.250" y="33" width="3.500" height="8" fill="#111"/>
+      <circle cx="89" cy="35" r="3.500" fill="#111"/>
+      <rect x="76" y="40" width="26" height="19" rx="5.500" fill="#111"/>
+      <circle cx="83" cy="49.500" r="2.800" fill="#fafafa"/>
+      <circle cx="95" cy="49.500" r="2.800" fill="#fafafa"/>
+      <path d="M72 92V76c0-7 7.500-12 17-12s17 5 17 12v16Z" fill="#111"/>
+    </g>
+  </g>
+  <circle cx="96" cy="94" r="23" fill="#fafafa"/>
+  <path d="m85 94 8 8 15-17"/>
+</svg>
