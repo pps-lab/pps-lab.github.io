@@ -3919,8 +3919,8 @@ This year the course is offered in two sections (same lectures and course materi
 #### Course Evaluation
 - **Homeworks (10%)**
 - **Projects (20%)**
-- **Midterm Exam (30%)** - (October 21, during the discussion session; Midterm assigned rooms: LEC0101: MS 3153, 10:00–11:00 AM; LEC0201: ES 1050, 11:00 AM–12:00 PM)
-- **Final Exam (40%)**   - (December TBD: during the December 10–22 final exam period)
+- **Midterm Exam (30%)** - (October 21)
+- **Final Exam (40%)**   - (December 16 at 7:00 PM)
 #### Textbooks  
 There is no single required textbook for this course. We will rely heavily on the [**Berkeley Introduction to Security Textbook**](https://textbook.cs161.org/).  
 For the cryptography portion of the course, we will use [**A Graduate Course in Applied Cryptography**](https://toc.cryptobook.us/). Exact sections and reading materials will be specified in the course schedule.  Optional readings are recommended for deeper understanding but will not be part of the exam.
