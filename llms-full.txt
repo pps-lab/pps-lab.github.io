@@ -158,15 +158,21 @@ I am an Assistant Professor of Computer Science and a Canada Research Chair in S
 
 ### Research Group  [Photos: [2023](https://pps-lab.com/images/people/group_photos/pps_group_photo_2023.jpg),[2022](https://pps-lab.com/images/people/group_photos/pps_group_photo_2022.jpg),[2021](https://pps-lab.com/images/people/group_photos/pps_group_photo.jpg)]
 
-#### Current Students  
-* Nicolas Küchler (Ph.D.)
-* Hidde Lycklama (Ph.D.)
+#### Current Team  
+* Hidde Lycklama (Postdoc)
 * Nikolay Avramov (Ph.D.)
 * Ashwin Karthikeyan (Ph.D.)
+* Elizabeth Van Oorschot (Ph.D.)
+* Areez Chishtie (UG Researcher)
+* Boyan Litchev (UG Researcher) **[🏅 University of Toronto Excellence Award]**
+* Hugo Ye (UG Researcher)
+* Stefan Barna (UG Researcher)
 
   
 #### Former Students  
-* Alexander Viand ( Ph.D. → Cryptography Researcher at Intel Labs)
+* Nicolas Küchler (Ph.D.)
+* Hidde Lycklama (Ph.D. → Postdoc at the University of Toronto)
+* Alexander Viand (Ph.D. → Postdoc at the University of Cambridge)
 * Lukas Burkhalter **[🏅 Microsoft Research Ph.D. Award]**   ( Ph.D. → Cryptography Engineer at [Proton](https://proton.me/))
 * Christian Knabenhans (MS → Ph.D. student at EPFL)
 * Miro Haller  (MS → Ph.D. student at UCSD)
@@ -178,16 +184,21 @@ I am an Assistant Professor of Computer Science and a Canada Research Chair in S
 * Lukas Burkhalter - **[🏅 ETH Medal for Outstanding Master Thesis]** (MS → Ph.D. student at ETH Zurich)
 * Su Li (MS → Ph.D. student at EPFL)
 * Vaibhav Kulkarni (MS → Ph.D. student at the University of Lausanne)
-* Yonathan Fisseha (BS → Ph.D. student at the  University of Michigan)
+* Yonathan Fisseha (UG Researcher → Ph.D. student at the  University of Michigan)
 * Clément Thorens (MS → Ph.D. student at ETH Zurich)
 * Lena Csomor (MS → CS High School Teacher at Kantonsschule Zurcher)
 * Matthias Lei (MS → Senior Consultant at Innovation Process Technology)
 * Dominic Plangger (MS → Lead Engineer at xorlab)
 * Michel Kaporin (MS → Software Engineer at ti&m)
 * Yu-Shan Wei (MS → Software Engineer at LzLabs)
-* Emanuel Opel (BS → MS ETH Zurich)
-* Isha Gupta (BS → MS Stanford)
+* Emanuel Opel (UG Researcher → MS ETH Zurich)
+* Isha Gupta (UG Researcher → MS Stanford)
+* Daniel Dervishi (UG Researcher → Software Engineer at Meta)
+* Justus Croskery (UG Researcher → Ph.D. student at the University of Maryland)
+* Sataphon (PF) Obra (UG Researcher)
 * Giacomo Fiorindo (MS)
+* Ulla Aeschbacher (MS)
+* Gyorgy Rethy (UG Researcher)
   
 
 ### Teaching: 
