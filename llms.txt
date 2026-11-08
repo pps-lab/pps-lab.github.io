@@ -83,11 +83,11 @@ Website: https://pps-lab.com/. The full text of this site is at https://pps-lab.
 
 ## Teaching
 
+- [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2026w/): Winter 2026
 - [CSC364: Foundations of Computer Security](https://pps-lab.com/teaching/comsec/2025/): Fall 2025
 - [CSC364: Foundations of Computer Security](https://pps-lab.com/teaching/comsec/): Fall 2026
 - [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2025/): Winter 2025
 - [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/): Fall 2026
-- [CSC2231HS: Privacy-Enhancing Technologies](https://pps-lab.com/teaching/pets/2026w/): Winter 2026
 
 ## News
 
