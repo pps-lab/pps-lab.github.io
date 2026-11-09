@@ -157,15 +157,15 @@ Google Scholar: https://scholar.google.com/citations?user=n8bCzSAAAAAJ&hl=en&oi=
 I am an Assistant Professor of Computer Science and a Canada Research Chair in Security and Privacy at the University of Toronto, where I lead the  [Privacy Preserving Systems Lab](http://pps-lab.github.io/). My research focuses on data privacy, applied cryptography, and systems. I completed my Ph.D. in Computer Science at ETH Zurich and spent two years as a postdoc at UC Berkeley. From 2020 to 2024, I was an Ambizione Fellow and research group leader at ETH Zurich. For more information on my current research, please visit the [PPS research lab page](http://pps-lab.github.io/). Outside of research, I enjoy cycling and swimming.
 
 ### Selected Honors & Awards: 
- * Canada Research Chair in Security and Privacy (Tier 2).
+ * Canada Research Chair in Security and Privacy.
  * Google Research Scholar.
  * Intel's Outstanding Researcher Awards.
  * Google Research Award.
  * Rising Stars in EECS.
  * Facebook Research Award.
- * ETH Research Grant.
- * SNF Ambizione Grant. 
- * SNF Postdoctoral Fellowship.
+ * ETH Research Award.
+ * SNSF Ambizione Award. 
+ * SNSF Postdoctoral Fellowship.
  * Google Anita Borg Scholarship. 
  * DAAD Scholarship for Master's Studies.
 
@@ -193,7 +193,7 @@ I am an Assistant Professor of Computer Science and a Canada Research Chair in S
 
   
 #### Former Students  
-* Nicolas Küchler (Ph.D.)
+* Nicolas Küchler (Ph.D. → Postdoc at ETH Zurich)
 * Hidde Lycklama (Ph.D. → Postdoc at the University of Toronto)
 * Alexander Viand (Ph.D. → Postdoc at the University of Cambridge)
 * Lukas Burkhalter **[🏅 Microsoft Research Ph.D. Award]**   ( Ph.D. → Cryptography Engineer at [Proton](https://proton.me/))
@@ -215,13 +215,13 @@ I am an Assistant Professor of Computer Science and a Canada Research Chair in S
 * Michel Kaporin (MS → Software Engineer at ti&m)
 * Yu-Shan Wei (MS → Software Engineer at LzLabs)
 * Emanuel Opel (UG Researcher → MS ETH Zurich)
-* Isha Gupta (UG Researcher → MS Stanford)
+* Isha Gupta (UG Researcher → Safety Researcher at Anthropic)
 * Daniel Dervishi (UG Researcher → Software Engineer at Meta)
 * Justus Croskery (UG Researcher → Ph.D. student at the University of Maryland)
 * Sataphon (PF) Obra (UG Researcher)
-* Giacomo Fiorindo (MS)
-* Ulla Aeschbacher (MS)
-* Gyorgy Rethy (UG Researcher)
+* Giacomo Fiorindo (MS → Security Engineer at Google)
+* Ulla Aeschbacher (MS → Software Engineer at MP Technology)
+* Gyorgy Rethy (UG Researcher → Software Engineer at Oracle Labs)
 
 ### Selected Publications:
 
@@ -3837,66 +3837,6 @@ All the code from our arithmetization of FHEW and TFHE can be found here in our 
 
 # Teaching
 
-## CSC2231HS: Privacy-Enhancing Technologies (Winter 2026)
-
-URL: https://pps-lab.com/teaching/pets/2026w/
-
-#### Overview
-Personal information is central to our identity, and protecting it is crucial to preserving our fundamental
-right to privacy. Yet, rapid advances in technology often challenge our ability to safeguard it. In this course,
-we will explore how privacy can be formally defined and protected. We will examine how techniques from
-cryptography and statistics can be applied to build systems that enable data-driven applications while
-protecting individual privacy.
-
-The first part of the course introduces key cryptographic concepts, including secure multiparty computation
-(MPC), fully homomorphic encryption (FHE), zero-knowledge proofs (ZKPs), private information retrieval,
-oblivious RAM, and anonymous communication protocols. The second part covers statistical approaches
-to privacy, with a particular focus on diﬀerential privacy. Toward the end of the course, we will discuss
-real-world applications of these privacy-enhancing technologies.
-
-#### Course Information
-- **Instructor**: Anwar Hithnawi 
-- **TA**: Nikolay Avramov
-- **E-mail**: [ahithnawi@cs.toronto.edu](mailto:ahithnawi@cs.toronto.edu)
-- **Class Time & Location**: Wednesday 9:00 AM – 11:00 AM. Room: KP 113
-- **Office Hours**: Wednesday, 11:00 AM – 12:00 PM, or by appointment. Room: BA 5222
-
-#### Important Links
-- **Course Website**: [https://pps-lab.com/teaching/pets](https://pps-lab.com/teaching/pets)
-- **Quercus (announcements)**: [https://q.utoronto.ca/courses/419198](https://q.utoronto.ca/courses/419198)
-- **Paper Reviews**: [https://uoft-csc2231w2026.hotcrp.com/](https://uoft-csc2231w2026.hotcrp.com/)
-
-All course materials, including the schedule, lecture slides, and readings, will be available on the course website.
-
-#### Prerequisites
-A general background in computer systems and cryptography is required. There is no required textbook for this course. For a refresher on security concepts, you can consult the [Berkeley Introduction to Security Textbook](https://textbook.cs161.org/textbook_full.pdf) and for cryptography, see [A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/).
-
-#### Course Evaluation
-- 30% – Paper presentation (slides due at the start of your presentation)
-- 20% – Participation and paper reviews (reviews due at the start of class)
-- 10% – Project proposal (due Feb 11)
-- 40% – Final project (due April 8)
-
-#### Deliverables
-
-**Presentations and Reviews:** All students are required to read both papers assigned for each class _before_ the session. You must submit a written review for _one_ of those two papers (of your choice) by **9:00 AM on the day of the lecture**. Each paper will be presented by a designated student in a 30-minute conference-style talk. The presenter will then lead a discussion lasting about 55 minutes in total for both presentation and Q&A. We will have a 10-minute break at the midpoint of class. One week before your scheduled presentation, please meet with me during office hours to get feedback on your slides and talk. In addition to the two assigned papers per class, recommended readings will sometimes be posted. You are encouraged to read as many of these additional materials as possible to get the most out of the course. 
-
-**Projects:** Students will work in pairs on a research project related to privacy-enhancing technologies. Each pair must submit a proposal to the instructor no later than **Feb 11 at 9:00 AM**. Near the end of the term, you will present your work to the class in a 30-minute (including Q&A) conference-style presentation. In addition, by **April 8**, you must submit a workshop-quality paper of 8--10 pages describing your project. We encourage you to consult with the instructor regularly to ensure you are making progress. If you have difficulty finding a project topic, please reach out early; we can provide a list of suggested topics.
-
-#### Format
-Please submit your presentation slides, project proposal, and final project write-up in **PDF format** via email. We strongly encourage typesetting your deliverables in LaTeX. Use the **course’s HotCRP submission system** to submit paper reviews for assigned readings.
-
-#### Late Policy
-- **Paper reviews**: No reviews are accepted once the class has started. You may skip reviews for **two** papers without penalty.
-
-- **Project proposal and final report**: If your project proposal or final report is submitted late, 20% will be deducted from the grade for each day it is overdue.
-
-#### Policy on the Use of Artificial Intelligence
-Large-language model-based tools (e.g., ChatGPT) can be very helpful, and you are encouraged to leverage them. However, please do not use them in any way that trivializes the assignments or bypasses the course's learning objectives. If you have doubts about permissible usage, please check with the instructor first. 
-
-#### Schedule and Readings
-The schedule may be adjusted as the semester progresses; any changes will be announced in class and on Quercus. If you have questions, please contact the instructor. Check this [**link**](https://docs.google.com/spreadsheets/d/17rPuyfp9uMVIqcnYq2pNiSg11HSoCkk0qpcaG7N5An4/edit?gid=0#gid=0) to find out when you're presenting.
-
 ## CSC364: Foundations of Computer Security (Fall 2025)
 
 URL: https://pps-lab.com/teaching/comsec/2025/
@@ -4096,6 +4036,66 @@ Large-language model-based tools (e.g., ChatGPT) can be very helpful, and you ar
 
 #### Schedule and Readings
 The schedule may be adjusted as the semester progresses; any changes will be announced in class and on Quercus. If you have questions, please contact the instructor. Check this [**link**](https://docs.google.com/spreadsheets/d/1LjUCMlr3FqtdHnN_tGducGyKF-W4FKgC2u56mW5cawE/) to find out when you're presenting.
+
+## CSC2231HS: Privacy-Enhancing Technologies (Winter 2026)
+
+URL: https://pps-lab.com/teaching/pets/2026w/
+
+#### Overview
+Personal information is central to our identity, and protecting it is crucial to preserving our fundamental
+right to privacy. Yet, rapid advances in technology often challenge our ability to safeguard it. In this course,
+we will explore how privacy can be formally defined and protected. We will examine how techniques from
+cryptography and statistics can be applied to build systems that enable data-driven applications while
+protecting individual privacy.
+
+The first part of the course introduces key cryptographic concepts, including secure multiparty computation
+(MPC), fully homomorphic encryption (FHE), zero-knowledge proofs (ZKPs), private information retrieval,
+oblivious RAM, and anonymous communication protocols. The second part covers statistical approaches
+to privacy, with a particular focus on diﬀerential privacy. Toward the end of the course, we will discuss
+real-world applications of these privacy-enhancing technologies.
+
+#### Course Information
+- **Instructor**: Anwar Hithnawi 
+- **TA**: Nikolay Avramov
+- **E-mail**: [ahithnawi@cs.toronto.edu](mailto:ahithnawi@cs.toronto.edu)
+- **Class Time & Location**: Wednesday 9:00 AM – 11:00 AM. Room: KP 113
+- **Office Hours**: Wednesday, 11:00 AM – 12:00 PM, or by appointment. Room: BA 5222
+
+#### Important Links
+- **Course Website**: [https://pps-lab.com/teaching/pets](https://pps-lab.com/teaching/pets)
+- **Quercus (announcements)**: [https://q.utoronto.ca/courses/419198](https://q.utoronto.ca/courses/419198)
+- **Paper Reviews**: [https://uoft-csc2231w2026.hotcrp.com/](https://uoft-csc2231w2026.hotcrp.com/)
+
+All course materials, including the schedule, lecture slides, and readings, will be available on the course website.
+
+#### Prerequisites
+A general background in computer systems and cryptography is required. There is no required textbook for this course. For a refresher on security concepts, you can consult the [Berkeley Introduction to Security Textbook](https://textbook.cs161.org/textbook_full.pdf) and for cryptography, see [A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/).
+
+#### Course Evaluation
+- 30% – Paper presentation (slides due at the start of your presentation)
+- 20% – Participation and paper reviews (reviews due at the start of class)
+- 10% – Project proposal (due Feb 11)
+- 40% – Final project (due April 8)
+
+#### Deliverables
+
+**Presentations and Reviews:** All students are required to read both papers assigned for each class _before_ the session. You must submit a written review for _one_ of those two papers (of your choice) by **9:00 AM on the day of the lecture**. Each paper will be presented by a designated student in a 30-minute conference-style talk. The presenter will then lead a discussion lasting about 55 minutes in total for both presentation and Q&A. We will have a 10-minute break at the midpoint of class. One week before your scheduled presentation, please meet with me during office hours to get feedback on your slides and talk. In addition to the two assigned papers per class, recommended readings will sometimes be posted. You are encouraged to read as many of these additional materials as possible to get the most out of the course. 
+
+**Projects:** Students will work in pairs on a research project related to privacy-enhancing technologies. Each pair must submit a proposal to the instructor no later than **Feb 11 at 9:00 AM**. Near the end of the term, you will present your work to the class in a 30-minute (including Q&A) conference-style presentation. In addition, by **April 8**, you must submit a workshop-quality paper of 8--10 pages describing your project. We encourage you to consult with the instructor regularly to ensure you are making progress. If you have difficulty finding a project topic, please reach out early; we can provide a list of suggested topics.
+
+#### Format
+Please submit your presentation slides, project proposal, and final project write-up in **PDF format** via email. We strongly encourage typesetting your deliverables in LaTeX. Use the **course’s HotCRP submission system** to submit paper reviews for assigned readings.
+
+#### Late Policy
+- **Paper reviews**: No reviews are accepted once the class has started. You may skip reviews for **two** papers without penalty.
+
+- **Project proposal and final report**: If your project proposal or final report is submitted late, 20% will be deducted from the grade for each day it is overdue.
+
+#### Policy on the Use of Artificial Intelligence
+Large-language model-based tools (e.g., ChatGPT) can be very helpful, and you are encouraged to leverage them. However, please do not use them in any way that trivializes the assignments or bypasses the course's learning objectives. If you have doubts about permissible usage, please check with the instructor first. 
+
+#### Schedule and Readings
+The schedule may be adjusted as the semester progresses; any changes will be announced in class and on Quercus. If you have questions, please contact the instructor. Check this [**link**](https://docs.google.com/spreadsheets/d/17rPuyfp9uMVIqcnYq2pNiSg11HSoCkk0qpcaG7N5An4/edit?gid=0#gid=0) to find out when you're presenting.
 
 
 # News
