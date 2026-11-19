@@ -181,7 +181,7 @@ I am an Assistant Professor of Computer Science and a Canada Research Chair in S
 
 ### Research Group  [Photos: [2023](https://pps-lab.com/images/people/group_photos/pps_group_photo_2023.jpg),[2022](https://pps-lab.com/images/people/group_photos/pps_group_photo_2022.jpg),[2021](https://pps-lab.com/images/people/group_photos/pps_group_photo.jpg)]
 
-#### Current Team  
+#### Team
 * Hidde Lycklama (Postdoc)
 * Nikolay Avramov (Ph.D.)
 * Ashwin Karthikeyan (Ph.D.)
@@ -192,7 +192,7 @@ I am an Assistant Professor of Computer Science and a Canada Research Chair in S
 * Stefan Barna (UG Researcher)
 
   
-#### Former Students  
+#### Alumni
 * Nicolas Küchler (Ph.D. → Postdoc at ETH Zurich)
 * Hidde Lycklama (Ph.D. → Postdoc at the University of Toronto)
 * Alexander Viand (Ph.D. → Postdoc at the University of Cambridge)
